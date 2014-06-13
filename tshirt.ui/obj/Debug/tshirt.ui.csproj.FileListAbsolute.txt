@@ -1,0 +1,4 @@
+C:\Users\tisa.KYIV\Documents\Visual Studio 2012\Projects\WebApplication1\WebApplication1\bin\tshirt.ui.dll
+C:\Users\tisa.KYIV\Documents\Visual Studio 2012\Projects\WebApplication1\WebApplication1\bin\tshirt.ui.pdb
+C:\Users\tisa.KYIV\Documents\Visual Studio 2012\Projects\WebApplication1\WebApplication1\obj\Debug\tshirt.ui.dll
+C:\Users\tisa.KYIV\Documents\Visual Studio 2012\Projects\WebApplication1\WebApplication1\obj\Debug\tshirt.ui.pdb
