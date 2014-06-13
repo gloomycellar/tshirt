@@ -1,7 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2012
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "tshirt.ui", "tshirt.ui\tshirt.ui.csproj", "{918C44EF-BA0E-494E-AFE2-83B162C9DD6A}"
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "tshirt", "tshirt\tshirt.csproj", "{2173A382-142D-498B-8201-7295958DFA57}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -9,10 +11,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{918C44EF-BA0E-494E-AFE2-83B162C9DD6A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{918C44EF-BA0E-494E-AFE2-83B162C9DD6A}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{918C44EF-BA0E-494E-AFE2-83B162C9DD6A}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{918C44EF-BA0E-494E-AFE2-83B162C9DD6A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2173A382-142D-498B-8201-7295958DFA57}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2173A382-142D-498B-8201-7295958DFA57}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2173A382-142D-498B-8201-7295958DFA57}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2173A382-142D-498B-8201-7295958DFA57}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
