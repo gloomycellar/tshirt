@@ -2,3 +2,8 @@ C:\Users\tisa.KYIV\Documents\Visual Studio 2012\Projects\WebApplication1\WebAppl
 C:\Users\tisa.KYIV\Documents\Visual Studio 2012\Projects\WebApplication1\WebApplication1\bin\tshirt.ui.pdb
 C:\Users\tisa.KYIV\Documents\Visual Studio 2012\Projects\WebApplication1\WebApplication1\obj\Debug\tshirt.ui.dll
 C:\Users\tisa.KYIV\Documents\Visual Studio 2012\Projects\WebApplication1\WebApplication1\obj\Debug\tshirt.ui.pdb
+C:\Users\tisa.KYIV\Documents\Visual Studio 2012\Projects\tshirt\tshirt.ui\bin\tshirt.ui.dll
+C:\Users\tisa.KYIV\Documents\Visual Studio 2012\Projects\tshirt\tshirt.ui\bin\tshirt.ui.pdb
+C:\Users\tisa.KYIV\Documents\Visual Studio 2012\Projects\tshirt\tshirt.ui\obj\Debug\tshirt.ui.csprojResolveAssemblyReference.cache
+C:\Users\tisa.KYIV\Documents\Visual Studio 2012\Projects\tshirt\tshirt.ui\obj\Debug\tshirt.ui.dll
+C:\Users\tisa.KYIV\Documents\Visual Studio 2012\Projects\tshirt\tshirt.ui\obj\Debug\tshirt.ui.pdb
