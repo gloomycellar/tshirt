@@ -3,7 +3,7 @@ using Newtonsoft.Json.Converters;
 
 namespace tshirt.Core.Entities
 {
-    public class Tshirt
+    public class Tshirt : EntityBase
     {
         [JsonProperty("name")]
         public string Name { get; set; }
