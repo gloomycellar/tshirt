@@ -30,3 +30,9 @@ C:\Projects\tshirt\tshirt\bin\Antlr3.Runtime.pdb
 C:\Projects\tshirt\tshirt\obj\Debug\tshirt.csprojResolveAssemblyReference.cache
 C:\Projects\tshirt\tshirt\obj\Debug\tshirt.dll
 C:\Projects\tshirt\tshirt\obj\Debug\tshirt.pdb
+C:\Projects\tshirt\tshirt\bin\Ninject.dll
+C:\Projects\tshirt\tshirt\bin\tshirt.Core.dll
+C:\Projects\tshirt\tshirt\bin\tshirt.Core.pdb
+C:\Projects\tshirt\tshirt\bin\Ninject.xml
+C:\Projects\tshirt\tshirt\bin\EntityFramework.dll
+C:\Projects\tshirt\tshirt\bin\EntityFramework.xml

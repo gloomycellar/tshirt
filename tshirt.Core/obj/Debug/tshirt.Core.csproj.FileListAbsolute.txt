@@ -1,0 +1,14 @@
+C:\Projects\tshirt\tshirt.Core\bin\Debug\tshirt.Core.dll.config
+C:\Projects\tshirt\tshirt.Core\bin\Debug\tshirt.Core.dll
+C:\Projects\tshirt\tshirt.Core\bin\Debug\tshirt.Core.pdb
+C:\Projects\tshirt\tshirt.Core\bin\Debug\EntityFramework.dll
+C:\Projects\tshirt\tshirt.Core\bin\Debug\EntityFramework.SqlServer.dll
+C:\Projects\tshirt\tshirt.Core\bin\Debug\Ninject.dll
+C:\Projects\tshirt\tshirt.Core\bin\Debug\EntityFramework.xml
+C:\Projects\tshirt\tshirt.Core\bin\Debug\EntityFramework.SqlServer.xml
+C:\Projects\tshirt\tshirt.Core\bin\Debug\Ninject.xml
+C:\Projects\tshirt\tshirt.Core\obj\Debug\tshirt.Core.csprojResolveAssemblyReference.cache
+C:\Projects\tshirt\tshirt.Core\obj\Debug\tshirt.Core.dll
+C:\Projects\tshirt\tshirt.Core\obj\Debug\tshirt.Core.pdb
+C:\Projects\tshirt\tshirt.Core\bin\Debug\Newtonsoft.Json.dll
+C:\Projects\tshirt\tshirt.Core\bin\Debug\Newtonsoft.Json.xml
