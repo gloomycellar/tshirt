@@ -36,3 +36,5 @@ C:\Projects\tshirt\tshirt\bin\tshirt.Core.pdb
 C:\Projects\tshirt\tshirt\bin\Ninject.xml
 C:\Projects\tshirt\tshirt\bin\EntityFramework.dll
 C:\Projects\tshirt\tshirt\bin\EntityFramework.xml
+C:\Projects\tshirt\tshirt\bin\EntityFramework.SqlServer.dll
+C:\Projects\tshirt\tshirt\bin\EntityFramework.SqlServer.xml

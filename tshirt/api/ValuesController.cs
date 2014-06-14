@@ -8,6 +8,7 @@ using System.Net.Http;
 using System.Web.Helpers;
 using System.Web.Http;
 using tshirt.Core.Entities;
+using tshirt.Core.Repository;
 
 namespace tshirt.api
 {
@@ -15,14 +16,8 @@ namespace tshirt.api
     {
         public Tshirt Get()
         {
-            return new Tshirt
-                {
-                    Name = "test tshirt",
-                    Category = Category.Animals,
-                    Description = "test description",
-                    ImageUrl = "url",
-                    Prise = 10.00m
-                };
+            IRepository<Tshirt> repo = new Repository<Tshirt>(new ApplicationDbContext());
+            return repo.Entities.FirstOrDefault();
         }
     }
 }
