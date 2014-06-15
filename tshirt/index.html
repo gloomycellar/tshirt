@@ -60,8 +60,6 @@
         </div>
     </div>
 
-    <input type="button" value="Click" onclick="getJson()" />
-
     <script type="text/javascript" src="scripts/jquery-2.1.1.min.js"></script>
     <!--<script type="text/javascript" src="scripts/jquery-2.1.1.intellisense.js"></script>-->
     <script type="text/javascript" src="scripts/bootstrap.min.js"></script>
@@ -74,19 +72,7 @@
     <script type="text/javascript" src="scripts/angular-ui/ui-bootstrap.min.js"></script>
         
     <script type="text/javascript" src="app.js"></script>
-    <script type="text/javascript" src="services/GreetingService.js"></script>
+    <script type="text/javascript" src="services/TshirtService.js"></script>
     <script type="text/javascript" src="controllers/main.js"></script>
-
-    <script type="text/javascript">
-        function getJson() {
-            $.ajax({
-                url: "/api/values",
-                context: document.body
-            }).done(function (data) {
-                console.log(data);
-            });
-        }
-    </script>
-
 </body>
 </html>

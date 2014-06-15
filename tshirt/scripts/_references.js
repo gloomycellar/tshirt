@@ -296,4 +296,4 @@
 /// <reference path="i18n/angular-locale_zu.js" />
 /// <reference path="../app.js" />
 /// <reference path="../controllers/main.js" />
-/// <reference path="../services/greetingservice.js" />
+/// <reference path="../services/tshirtservice.js" />

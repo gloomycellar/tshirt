@@ -1,10 +1,6 @@
 ﻿'use strict';
 
 angular.module('testAngularJsApp')
-    .controller('MainCtrl', function ($scope, greeting) {
-        greeting.getMessage(function (data) {
-            var obj = data;
-            console.log(obj);
-            $scope.greeting = obj.message;
-        });
+    .controller('MainCtrl', function ($scope, tshirtsService) {
+        tshirtsService.get(function (data) { console.log(data); $scope.tshirts = data; });
     });

@@ -1,3 +1,9 @@
-﻿<div>
-    <h1>{{greeting}}</h1>
+﻿<div ng-repeat="tshirt in tshirts">
+    <div class="well-sm">
+        Name: {{tshirt.name}}<br />
+        Category: {{tshirt.category}}<br />
+        ImageUrl: {{tshirt.imageUrl}}<br />
+        Prise: {{tshirt.prise}}<br />
+        Description: {{tshirt.description}}
+    </div>
 </div>
