@@ -132,7 +132,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="admin\content\" />
+    <Folder Include="admin\css\plugins\morris\" />
     <Folder Include="App_Data\" />
     <Folder Include="images\" />
   </ItemGroup>
@@ -150,6 +150,46 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="admin\admin.js" />
+    <Content Include="admin\blank.html" />
+    <Content Include="admin\buttons.html" />
+    <Content Include="admin\css\bootstrap.css" />
+    <Content Include="admin\css\bootstrap.min.css" />
+    <Content Include="admin\css\plugins\dataTables\dataTables.bootstrap.css" />
+    <Content Include="admin\css\plugins\morris-0.4.3.min.css" />
+    <Content Include="admin\css\plugins\social-buttons\social-buttons.css" />
+    <Content Include="admin\css\plugins\timeline\timeline.css" />
+    <Content Include="admin\css\sb-admin.css" />
+    <Content Include="admin\flot.html" />
+    <Content Include="admin\font-awesome\css\font-awesome.css" />
+    <Content Include="admin\font-awesome\css\font-awesome.min.css" />
+    <Content Include="admin\font-awesome\fonts\fontawesome-webfont.svg" />
+    <Content Include="admin\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="admin\forms.html" />
+    <Content Include="admin\grid.html" />
+    <Content Include="admin\index.html" />
+    <Content Include="admin\js\bootstrap.js" />
+    <Content Include="admin\js\bootstrap.min.js" />
+    <Content Include="admin\js\demo\dashboard-demo.js" />
+    <Content Include="admin\js\demo\flot-demo.js" />
+    <Content Include="admin\js\demo\morris-demo.js" />
+    <Content Include="admin\js\jquery-1.10.2.js" />
+    <Content Include="admin\js\plugins\dataTables\dataTables.bootstrap.js" />
+    <Content Include="admin\js\plugins\dataTables\jquery.dataTables.js" />
+    <Content Include="admin\js\plugins\flot\excanvas.min.js" />
+    <Content Include="admin\js\plugins\flot\jquery.flot.js" />
+    <Content Include="admin\js\plugins\flot\jquery.flot.pie.js" />
+    <Content Include="admin\js\plugins\flot\jquery.flot.resize.js" />
+    <Content Include="admin\js\plugins\flot\jquery.flot.tooltip.min.js" />
+    <Content Include="admin\js\plugins\metisMenu\jquery.metisMenu.js" />
+    <Content Include="admin\js\plugins\morris\morris.js" />
+    <Content Include="admin\js\plugins\morris\raphael-2.1.0.min.js" />
+    <Content Include="admin\js\sb-admin.js" />
+    <Content Include="admin\login.html" />
+    <Content Include="admin\morris.html" />
+    <Content Include="admin\notifications.html" />
+    <Content Include="admin\panels-wells.html" />
+    <Content Include="admin\tables.html" />
+    <Content Include="admin\typography.html" />
     <Content Include="app.js" />
     <Content Include="content\bootstrap-theme.css" />
     <Content Include="content\bootstrap-theme.min.css" />
@@ -160,7 +200,7 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="index.html" />
-    <Content Include="admin\index.html" />
+    <Content Include="admin\index_.html" />
     <Content Include="scripts\angular-animate.js" />
     <Content Include="scripts\angular-animate.min.js" />
     <Content Include="scripts\angular-cookies.js" />
@@ -479,6 +519,39 @@
     <Content Include="scripts\i18n\angular-locale_zh.js" />
     <Content Include="scripts\i18n\angular-locale_zu-za.js" />
     <Content Include="scripts\i18n\angular-locale_zu.js" />
+    <Content Include="admin\font-awesome\fonts\fontawesome-webfont.eot" />
+    <Content Include="admin\font-awesome\fonts\fontawesome-webfont.ttf" />
+    <Content Include="admin\font-awesome\fonts\fontawesome-webfont.woff" />
+    <Content Include="admin\font-awesome\fonts\FontAwesome.otf" />
+    <Content Include="admin\font-awesome\less\bordered-pulled.less" />
+    <Content Include="admin\font-awesome\less\core.less" />
+    <Content Include="admin\font-awesome\less\fixed-width.less" />
+    <Content Include="admin\font-awesome\less\font-awesome.less" />
+    <Content Include="admin\font-awesome\less\icons.less" />
+    <Content Include="admin\font-awesome\less\larger.less" />
+    <Content Include="admin\font-awesome\less\list.less" />
+    <Content Include="admin\font-awesome\less\mixins.less" />
+    <Content Include="admin\font-awesome\less\path.less" />
+    <Content Include="admin\font-awesome\less\rotated-flipped.less" />
+    <Content Include="admin\font-awesome\less\spinning.less" />
+    <Content Include="admin\font-awesome\less\stacked.less" />
+    <Content Include="admin\font-awesome\less\variables.less" />
+    <Content Include="admin\font-awesome\scss\font-awesome.scss" />
+    <Content Include="admin\font-awesome\scss\_bordered-pulled.scss" />
+    <Content Include="admin\font-awesome\scss\_core.scss" />
+    <Content Include="admin\font-awesome\scss\_fixed-width.scss" />
+    <Content Include="admin\font-awesome\scss\_icons.scss" />
+    <Content Include="admin\font-awesome\scss\_larger.scss" />
+    <Content Include="admin\font-awesome\scss\_list.scss" />
+    <Content Include="admin\font-awesome\scss\_mixins.scss" />
+    <Content Include="admin\font-awesome\scss\_path.scss" />
+    <Content Include="admin\font-awesome\scss\_rotated-flipped.scss" />
+    <Content Include="admin\font-awesome\scss\_spinning.scss" />
+    <Content Include="admin\font-awesome\scss\_stacked.scss" />
+    <Content Include="admin\font-awesome\scss\_variables.scss" />
+    <Content Include="admin\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="admin\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="admin\fonts\glyphicons-halflings-regular.woff" />
     <None Include="scripts\jquery-2.1.1-vsdoc.js" />
     <Content Include="scripts\jquery-2.1.1.js" />
     <Content Include="scripts\jquery-2.1.1.min.js" />
