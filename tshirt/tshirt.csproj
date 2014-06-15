@@ -132,6 +132,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="admin\content\" />
     <Folder Include="App_Data\" />
     <Folder Include="images\" />
   </ItemGroup>
