@@ -1,18 +1,33 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
+﻿using Ninject;
+using Ninject.Web.Common;
+using System.Reflection;
 using System.Web;
 using System.Web.Http;
 using System.Web.Mvc;
 using System.Web.Optimization;
 using System.Web.Routing;
+using tshirt.App_Start;
+using tshirt.Core.Repository;
 
 namespace tshirt
-{
-    public class WebApiApplication : System.Web.HttpApplication
+{    
+    public class WebApiApplication : NinjectHttpApplication
     {
-        protected void Application_Start()
+        protected override IKernel CreateKernel()
         {
+            StandardKernel kernel = new StandardKernel();
+            kernel.Load(Assembly.GetExecutingAssembly());
+
+            kernel.Bind<IDbContext>().To<ApplicationDbContext>();
+            kernel.Bind(typeof(IRepository<>)).To(typeof(Repository<>));
+
+            GlobalConfiguration.Configuration.DependencyResolver = new LocalNinjectDependencyResolver(kernel);
+            return kernel;
+        }
+        protected override void OnApplicationStarted()
+        {
+            base.OnApplicationStarted();
+
             AreaRegistration.RegisterAllAreas();
             GlobalConfiguration.Configure(WebApiConfig.Register);
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);

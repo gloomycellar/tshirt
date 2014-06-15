@@ -14,9 +14,15 @@ namespace tshirt.api
 {
     public class ValuesController : ApiController
     {
+        IRepository<Tshirt> repo;
+
+        public ValuesController(IRepository<Tshirt> repo)
+        {
+            this.repo = repo;
+        }
+
         public Tshirt Get()
         {
-            IRepository<Tshirt> repo = new Repository<Tshirt>(new ApplicationDbContext());
             return repo.Entities.FirstOrDefault();
         }
     }

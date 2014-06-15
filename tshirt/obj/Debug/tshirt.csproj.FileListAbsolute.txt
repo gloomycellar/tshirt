@@ -38,3 +38,8 @@ C:\Projects\tshirt\tshirt\bin\EntityFramework.dll
 C:\Projects\tshirt\tshirt\bin\EntityFramework.xml
 C:\Projects\tshirt\tshirt\bin\EntityFramework.SqlServer.dll
 C:\Projects\tshirt\tshirt\bin\EntityFramework.SqlServer.xml
+C:\Projects\tshirt\tshirt\bin\Ninject.Web.Common.dll
+C:\Projects\tshirt\tshirt\bin\Ninject.Web.Common.xml
+C:\Projects\tshirt\tshirt\bin\Ninject.Web.Mvc.dll
+C:\Projects\tshirt\tshirt\bin\WebActivatorEx.dll
+C:\Projects\tshirt\tshirt\bin\Ninject.Web.Mvc.xml
