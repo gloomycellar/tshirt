@@ -297,3 +297,5 @@
 /// <reference path="../app.js" />
 /// <reference path="../controllers/main.js" />
 /// <reference path="../services/tshirtservice.js" />
+/// <reference path="../admin/admin.js" />
+/// <reference path="../admin/controllers/admin.js" />
