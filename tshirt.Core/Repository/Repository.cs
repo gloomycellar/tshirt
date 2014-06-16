@@ -44,7 +44,7 @@ namespace tshirt.Core.Repository
 
         public async void Delete(params TEntity[] entities)
         {
-            entities.ForeEach(x => context.Set<TEntity>().Remove(x));
+            entities.ForEach(x => context.Set<TEntity>().Remove(x));
             await context.SaveChangesAsync();
         }
 

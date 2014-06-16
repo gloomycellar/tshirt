@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 using System.Web.Http;
-using tshirt.Core.Entities;
+using tshirt.Core.Entities.ConcreteProducts;
 using tshirt.Core.Repository;
 
 namespace tshirt.api
