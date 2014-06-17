@@ -19,6 +19,9 @@ D:\VS2010_Projects\Tests\tshirt\tshirt.Core\bin\Debug\Newtonsoft.Json.dll
 D:\VS2010_Projects\Tests\tshirt\tshirt.Core\bin\Debug\EntityFramework.xml
 D:\VS2010_Projects\Tests\tshirt\tshirt.Core\bin\Debug\EntityFramework.SqlServer.xml
 D:\VS2010_Projects\Tests\tshirt\tshirt.Core\bin\Debug\Newtonsoft.Json.xml
-D:\VS2010_Projects\Tests\tshirt\tshirt.Core\obj\Debug\tshirt.Core.csprojResolveAssemblyReference.cache
 D:\VS2010_Projects\Tests\tshirt\tshirt.Core\obj\Debug\tshirt.Core.dll
 D:\VS2010_Projects\Tests\tshirt\tshirt.Core\obj\Debug\tshirt.Core.pdb
+D:\VS2010_Projects\Tests\tshirt\tshirt.Core\obj\Debug\tshirt.Core.Migrations.InitialCreate.resources
+D:\VS2010_Projects\Tests\tshirt\tshirt.Core\obj\Debug\tshirt.Core.csproj.GenerateResource.Cache
+D:\VS2010_Projects\Tests\tshirt\tshirt.Core\obj\Debug\tshirt.Core.Migrations.MyMigration.resources
+D:\VS2010_Projects\Tests\tshirt\tshirt.Core\obj\Debug\tshirt.Core.csprojResolveAssemblyReference.cache

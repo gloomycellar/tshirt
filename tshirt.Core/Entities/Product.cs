@@ -1,10 +1,16 @@
 ﻿using Newtonsoft.Json;
 using Newtonsoft.Json.Converters;
+using System.Collections.Generic;
 
 namespace tshirt.Core.Entities
 {
-    public class Product : EntityBase
+    public abstract class Product : EntityBase
     {
+        public Product()
+        {
+            Urls = new HashSet<UrlDetails>();
+        }
+
         [JsonProperty("name")]
         public string Name { get; set; }
 
@@ -17,5 +23,9 @@ namespace tshirt.Core.Entities
         [JsonProperty("availability")]
         [JsonConverter(typeof(StringEnumConverter))]
         public Availability Availability { get; set; }
+
+        [JsonProperty("imageUrl")]
+        public virtual ICollection<UrlDetails> Urls { get; set; }
+
     }
 }

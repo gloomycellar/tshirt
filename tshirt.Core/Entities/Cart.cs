@@ -15,7 +15,7 @@ namespace tshirt.Core.Entities
             paymentType = Entities.PaymentType.CreditCard;
         }
 
-        public IEnumerable<CartItem> CartItems { get { return cartItems; } }
+        public virtual IEnumerable<CartItem> CartItems { get { return cartItems; } }
 
         public PaymentType PaymentType
         {

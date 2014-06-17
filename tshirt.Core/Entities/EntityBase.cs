@@ -3,7 +3,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace tshirt.Core.Entities
 {
-    public class EntityBase
+    public abstract class EntityBase
     {
 
         [Key]

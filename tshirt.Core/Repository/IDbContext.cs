@@ -12,6 +12,6 @@ namespace tshirt.Core.Repository
         DbEntityEntry<TEntity> Entry<TEntity>(TEntity entity)
            where TEntity : class;
 
-        Task<int> SaveChangesAsync();
+        int SaveChanges();
     }
 }
