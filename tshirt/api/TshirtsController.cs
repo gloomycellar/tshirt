@@ -53,7 +53,7 @@ namespace tshirt.api
 
 
 
-            return repo.Entities;
+            return repo.Entities.ToArray();
         }
 
         public Tshirt Get([FromUri]int id) {

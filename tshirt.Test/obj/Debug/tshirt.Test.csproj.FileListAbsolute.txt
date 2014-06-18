@@ -12,3 +12,17 @@ D:\VS2010_Projects\Tests\tshirt\tshirt.Test\bin\Debug\tshirt.Core.pdb
 D:\VS2010_Projects\Tests\tshirt\tshirt.Test\bin\Debug\EntityFramework.xml
 D:\VS2010_Projects\Tests\tshirt\tshirt.Test\bin\Debug\EntityFramework.SqlServer.xml
 D:\VS2010_Projects\Tests\tshirt\tshirt.Test\bin\Debug\Newtonsoft.Json.xml
+C:\Projects\tshirt\tshirt.Test\bin\Debug\tshirt.Test.dll.config
+C:\Projects\tshirt\tshirt.Test\bin\Debug\tshirt.Test.dll
+C:\Projects\tshirt\tshirt.Test\bin\Debug\tshirt.Test.pdb
+C:\Projects\tshirt\tshirt.Test\bin\Debug\EntityFramework.dll
+C:\Projects\tshirt\tshirt.Test\bin\Debug\EntityFramework.SqlServer.dll
+C:\Projects\tshirt\tshirt.Test\bin\Debug\tshirt.Core.dll
+C:\Projects\tshirt\tshirt.Test\bin\Debug\Newtonsoft.Json.dll
+C:\Projects\tshirt\tshirt.Test\bin\Debug\tshirt.Core.pdb
+C:\Projects\tshirt\tshirt.Test\bin\Debug\EntityFramework.xml
+C:\Projects\tshirt\tshirt.Test\bin\Debug\EntityFramework.SqlServer.xml
+C:\Projects\tshirt\tshirt.Test\bin\Debug\Newtonsoft.Json.xml
+C:\Projects\tshirt\tshirt.Test\obj\Debug\tshirt.Test.csprojResolveAssemblyReference.cache
+C:\Projects\tshirt\tshirt.Test\obj\Debug\tshirt.Test.dll
+C:\Projects\tshirt\tshirt.Test\obj\Debug\tshirt.Test.pdb

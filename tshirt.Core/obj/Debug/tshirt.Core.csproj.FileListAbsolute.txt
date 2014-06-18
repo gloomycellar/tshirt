@@ -25,3 +25,6 @@ D:\VS2010_Projects\Tests\tshirt\tshirt.Core\obj\Debug\tshirt.Core.Migrations.Ini
 D:\VS2010_Projects\Tests\tshirt\tshirt.Core\obj\Debug\tshirt.Core.csproj.GenerateResource.Cache
 D:\VS2010_Projects\Tests\tshirt\tshirt.Core\obj\Debug\tshirt.Core.Migrations.MyMigration.resources
 D:\VS2010_Projects\Tests\tshirt\tshirt.Core\obj\Debug\tshirt.Core.csprojResolveAssemblyReference.cache
+C:\Projects\tshirt\tshirt.Core\obj\Debug\tshirt.Core.Migrations.InitialCreate.resources
+C:\Projects\tshirt\tshirt.Core\obj\Debug\tshirt.Core.Migrations.MyMigration.resources
+C:\Projects\tshirt\tshirt.Core\obj\Debug\tshirt.Core.csproj.GenerateResource.Cache
