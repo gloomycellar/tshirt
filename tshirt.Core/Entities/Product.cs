@@ -24,8 +24,10 @@ namespace tshirt.Core.Entities
         [JsonConverter(typeof(StringEnumConverter))]
         public Availability Availability { get; set; }
 
-        [JsonProperty("imageUrl")]
+        [JsonProperty("urls")]
         public virtual ICollection<UrlDetails> Urls { get; set; }
-
+        
+        [JsonProperty("mainLogo")]
+        public virtual UrlDetails MainLogo { get; set; }
     }
 }

@@ -1,7 +1,7 @@
 ﻿using Ninject;
 using Ninject.Web.Common;
+using System.Data.Entity;
 using System.Reflection;
-using System.Web;
 using System.Web.Http;
 using System.Web.Mvc;
 using System.Web.Optimization;
@@ -22,11 +22,15 @@ namespace tshirt
             kernel.Bind(typeof(IRepository<>)).To(typeof(Repository<>));
 
             GlobalConfiguration.Configuration.DependencyResolver = new LocalNinjectDependencyResolver(kernel);
+
             return kernel;
         }
+
         protected override void OnApplicationStarted()
         {
             base.OnApplicationStarted();
+
+            Database.SetInitializer(new DatabaseInitializer());
 
             AreaRegistration.RegisterAllAreas();
             GlobalConfiguration.Configure(WebApiConfig.Register);
