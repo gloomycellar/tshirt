@@ -19,7 +19,7 @@ namespace tshirt.Core.Entities
         {
             get
             {
-                return (count * product.Prise);
+                return (count * product.Price);
             }
         }
 

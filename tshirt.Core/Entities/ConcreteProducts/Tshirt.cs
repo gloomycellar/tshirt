@@ -14,7 +14,6 @@ namespace tshirt.Core.Entities.ConcreteProducts
         }
 
         [JsonProperty("category")]
-        [JsonConverter(typeof(StringEnumConverter))]
         public Category Category { get; set; }
 
         [JsonProperty("sizes")]

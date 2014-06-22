@@ -11,7 +11,11 @@ var app = angular
       $routeProvider
         .when('/', {
             templateUrl: 'views/main.html',
-            controller: 'MainCtrl'
+            controller: 'main'
+        })
+        .when('/productdetails/:productId', {
+            templateUrl: 'views/productdetails.html',
+            controller: 'productDetails'
         })
         .otherwise({
             redirectTo: '/'

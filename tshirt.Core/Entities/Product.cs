@@ -14,14 +14,13 @@ namespace tshirt.Core.Entities
         [JsonProperty("name")]
         public string Name { get; set; }
 
-        [JsonProperty("prise")]
-        public decimal Prise { get; set; }
+        [JsonProperty("price")]
+        public decimal Price { get; set; }
 
         [JsonProperty("description")]
         public string Description { get; set; }
 
         [JsonProperty("availability")]
-        [JsonConverter(typeof(StringEnumConverter))]
         public Availability Availability { get; set; }
 
         [JsonProperty("urls")]

@@ -41,11 +41,11 @@
   <ItemGroup>
     <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\EntityFramework.6.1.0\lib\net45\EntityFramework.dll</HintPath>
+      <HintPath>..\packages\EntityFramework.6.1.1\lib\net45\EntityFramework.dll</HintPath>
     </Reference>
     <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\EntityFramework.6.1.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <HintPath>..\packages\EntityFramework.6.1.1\lib\net45\EntityFramework.SqlServer.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
@@ -134,12 +134,13 @@
   <ItemGroup>
     <Folder Include="admin\css\plugins\morris\" />
     <Folder Include="App_Data\" />
+    <Folder Include="entities\" />
     <Folder Include="images\" />
     <Folder Include="themes\js\images\" />
     <Folder Include="themes\js\js\" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="api\TshirtsController.cs" />
+    <Compile Include="api\ProductsController.cs" />
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\LocalNinjectDependencyResolver.cs" />
@@ -211,6 +212,7 @@
     <Content Include="content\bootstrap.min.css" />
     <Content Include="admin\controllers\admin.js" />
     <Content Include="controllers\main.js" />
+    <Content Include="controllers\productDetails.js" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="index.html" />
@@ -307,6 +309,7 @@
     <Content Include="themes\js\jquery.flexslider-min.js" />
     <Content Include="themes\js\jquery.scrolltotop.js" />
     <Content Include="themes\js\superfish.js" />
+    <Content Include="views\productdetails.html" />
     <Content Include="_index.html" />
     <Content Include="admin\index_.html" />
     <Content Include="scripts\angular-animate.js" />
@@ -666,7 +669,7 @@
     <Content Include="scripts\modernizr-2.6.2.js" />
     <Content Include="scripts\respond.js" />
     <Content Include="scripts\respond.min.js" />
-    <Content Include="services\TshirtService.js" />
+    <Content Include="services\ProductService.js" />
     <Content Include="admin\views\admin.html" />
     <Content Include="views\main.html" />
     <Content Include="Web.config" />

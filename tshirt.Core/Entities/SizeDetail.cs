@@ -10,7 +10,6 @@ namespace tshirt.Core.Entities
     public class SizeDetail : EntityBase
     {
         [JsonProperty("sizeType")]
-        [JsonConverter(typeof(StringEnumConverter))]
         public Size SizeType { get; set; }
     }
 }
