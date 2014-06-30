@@ -17,6 +17,10 @@ var app = angular
             templateUrl: 'views/productdetails.html',
             controller: 'productDetails'
         })
+        .when('/cart', {
+            templateUrl: 'views/cart.html',
+            controller: 'cart'
+        })
         .otherwise({
             redirectTo: '/'
         });

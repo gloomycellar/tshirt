@@ -211,11 +211,14 @@
     <Content Include="content\bootstrap.css" />
     <Content Include="content\bootstrap.min.css" />
     <Content Include="admin\controllers\admin.js" />
+    <Content Include="controllers\cart.js" />
     <Content Include="controllers\main.js" />
     <Content Include="controllers\productDetails.js" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
-    <Content Include="index.html" />
+    <Content Include="services\CartService.js" />
+    <Content Include="views\cart.html" />
+    <Content Include="_index.html" />
     <Content Include="products.html" />
     <Content Include="product_detail.html" />
     <Content Include="register.html" />
@@ -310,7 +313,7 @@
     <Content Include="themes\js\jquery.scrolltotop.js" />
     <Content Include="themes\js\superfish.js" />
     <Content Include="views\productdetails.html" />
-    <Content Include="_index.html" />
+    <Content Include="index.html" />
     <Content Include="admin\index_.html" />
     <Content Include="scripts\angular-animate.js" />
     <Content Include="scripts\angular-animate.min.js" />

@@ -5,17 +5,17 @@
                 <h4 class="title">
                     <span class="pull-left"><span class="text"><span class="line">Feature <strong>Products</strong></span></span></span>                    
                 </h4>
-                <ul class="thumbnails">
-                    <li class="span3" ng-repeat="activeItem in tshirtsActive">
+                <ul class="thumbnails" ng-repeat="tshirts in tshirtArrays">
+                    <li class="span3" ng-repeat="tshirt in tshirts">
                         <div class="product-box">
                             <p>
-                                <a href="product_detail.html">
-                                    <img src="{{activeItem.mainLogo.imageUrl}}" alt="" />
+                                <a ng-click="showDetails(tshirt.id)">
+                                    <img src="{{tshirt.mainLogo.imageUrl}}" alt="" />
                                 </a>
                             </p>
-                            <a ng-click="showDetails(activeItem.id)" class="title">{{activeItem.name}}</a><br />
-                            <a href="products.html" class="category">Quis nostrud</a>
-                            <p class="price">{{activeItem.price}}</p>
+                            <a ng-click="showDetails(tshirt.id)" class="title">{{tshirt.name}}</a><br />
+                            <a ng-click="showDetails(tshirt.id)" class="category">Quis nostrud</a>
+                            <p class="price">{{tshirt.price}}</p>
                         </div>
                     </li>
                 </ul>

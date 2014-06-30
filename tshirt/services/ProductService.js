@@ -9,7 +9,7 @@
         },
 
         performCall: function (options) {
-            deffered = $q.defer();
+            var deffered = $q.defer();
             $http(options)
             .success(function (data, status, headers, config) {
                 deffered.resolve(data);
