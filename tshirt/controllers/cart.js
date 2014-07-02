@@ -1,6 +1,6 @@
 ﻿'use strict';
 
-angular.module('testAngularJsApp')
+angular.module('tshirtApp')
     .controller('cart', function ($scope, $routeParams, cartService) {
         $scope.cart = cartService;
     });

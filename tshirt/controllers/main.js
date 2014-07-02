@@ -1,6 +1,6 @@
 ﻿'use strict';
 
-angular.module('testAngularJsApp')
+angular.module('tshirtApp')
     .controller('main', function ($scope, $location, productService) {
         productService.getProducts().then(function (data) {
             var result = [],

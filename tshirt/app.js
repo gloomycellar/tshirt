@@ -1,7 +1,7 @@
 ﻿'use strict';
 
 var app = angular
-  .module('testAngularJsApp', [
+  .module('tshirtApp', [
     'ngCookies',
     'ngResource',
     'ngSanitize',
@@ -20,6 +20,14 @@ var app = angular
         .when('/cart', {
             templateUrl: 'views/cart.html',
             controller: 'cart'
+        })
+        .when('/checkout', {
+            templateUrl: 'views/checkout.html',
+            controller: 'checkout'
+        })
+        .when('/register', {
+            templateUrl: 'views/register.html',
+            controller: 'register'
         })
         .otherwise({
             redirectTo: '/'

@@ -1,6 +1,6 @@
 ﻿'use strict';
 
-angular.module('testAngularJsApp')
+angular.module('tshirtApp')
     .controller('productDetails', function ($scope, $routeParams, productService, cartService) {
         productService.getProduct($routeParams.productId).then(function (data) {
             $scope.product = data;            
