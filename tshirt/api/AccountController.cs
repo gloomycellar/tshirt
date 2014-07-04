@@ -6,16 +6,17 @@ using tshirt.Core.Repository;
 
 namespace tshirt.api
 {
-    //[RoutePrefix("api/Account")]
+    [RoutePrefix("api/Account")]
     public class AccountController : ApiController
     {
-        private AuthRepository repo = null;
+        private AuthRepository _repo = null;
 
         public AccountController()
         {
-            repo = new AuthRepository();
+            _repo = new AuthRepository();
         }
 
+        // POST api/Account/Register
         [AllowAnonymous]
         [Route("Register")]
         public async Task<IHttpActionResult> Register(User userModel)
@@ -25,7 +26,8 @@ namespace tshirt.api
                 return BadRequest(ModelState);
             }
 
-            IdentityResult result = await repo.RegisterUser(userModel);
+            IdentityResult result = await _repo.RegisterUser(userModel);
+
             IHttpActionResult errorResult = GetErrorResult(result);
 
             if (errorResult != null)
@@ -34,6 +36,16 @@ namespace tshirt.api
             }
 
             return Ok();
+        }
+
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing)
+            {
+                _repo.Dispose();
+            }
+
+            base.Dispose(disposing);
         }
 
         private IHttpActionResult GetErrorResult(IdentityResult result)
@@ -63,16 +75,6 @@ namespace tshirt.api
             }
 
             return null;
-        }
-
-        protected override void Dispose(bool disposing)
-        {
-            if (disposing)
-            {
-                repo.Dispose();
-            }
-
-            base.Dispose(disposing);
         }
     }
 }

@@ -11,6 +11,21 @@ namespace tshirt
     {
         public static void Register(HttpConfiguration config)
         {
+            //// Web API routes
+            //config.MapHttpAttributeRoutes();
+
+            //config.Routes.MapHttpRoute(
+            //    name: "DefaultApi",
+            //    routeTemplate: "api/{controller}/{id}",
+            //    defaults: new { id = RouteParameter.Optional }
+            //);
+
+            //JsonMediaTypeFormatter json = config.Formatters.JsonFormatter;
+            //json.SerializerSettings.PreserveReferencesHandling = Newtonsoft.Json.PreserveReferencesHandling.Objects;
+            //config.Formatters.Remove(config.Formatters.XmlFormatter);
+
+            // Web API configuration and services
+
             // Web API routes
             config.MapHttpAttributeRoutes();
 
@@ -19,13 +34,9 @@ namespace tshirt
                 routeTemplate: "api/{controller}/{id}",
                 defaults: new { id = RouteParameter.Optional }
             );
-            
-            JsonMediaTypeFormatter json = config.Formatters.JsonFormatter;
-            json.SerializerSettings.PreserveReferencesHandling = Newtonsoft.Json.PreserveReferencesHandling.Objects;
-            config.Formatters.Remove(config.Formatters.XmlFormatter);
 
-            //JsonMediaTypeFormatter jsonFormatter = config.Formatters.OfType<JsonMediaTypeFormatter>().First();
-            //jsonFormatter.SerializerSettings.ContractResolver = new CamelCasePropertyNamesContractResolver();
+            var jsonFormatter = config.Formatters.OfType<JsonMediaTypeFormatter>().First();
+            jsonFormatter.SerializerSettings.ContractResolver = new CamelCasePropertyNamesContractResolver();
         }
     }
 }

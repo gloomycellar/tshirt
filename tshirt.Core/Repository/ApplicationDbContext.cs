@@ -14,9 +14,6 @@ namespace tshirt.Core.Repository
         }
 
         public DbSet<Product> Products { get; set; }
-        //public DbSet<Tshirt> Tshirts { get; set; }
-        //public DbSet<Cart> Carts { get; set; }
-
 
         public void Seed()
         {

@@ -106,3 +106,6 @@ D:\VS2010_Projects\Tests\tshirt\tshirt\bin\Microsoft.Owin.Security.xml
 D:\VS2010_Projects\Tests\tshirt\tshirt\bin\Microsoft.Owin.Security.Cookies.xml
 D:\VS2010_Projects\Tests\tshirt\tshirt\bin\Microsoft.Owin.Security.OAuth.xml
 D:\VS2010_Projects\Tests\tshirt\tshirt\bin\System.Web.Http.Owin.xml
+D:\VS2010_Projects\Tests\tshirt\tshirt\bin\Microsoft.Owin.Cors.dll
+D:\VS2010_Projects\Tests\tshirt\tshirt\bin\System.Web.Cors.dll
+D:\VS2010_Projects\Tests\tshirt\tshirt\bin\Microsoft.Owin.Cors.xml
