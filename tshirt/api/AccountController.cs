@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNet.Identity;
 using System.Threading.Tasks;
 using System.Web.Http;
-using tshirt.Core.Entities;
+using tshirt.Core.Entities.Auth;
 using tshirt.Core.Repository;
 
 namespace tshirt.api
@@ -19,14 +19,14 @@ namespace tshirt.api
         // POST api/Account/Register
         [AllowAnonymous]
         [Route("Register")]
-        public async Task<IHttpActionResult> Register(User userModel)
+        public async Task<IHttpActionResult> Register(User user)
         {
             if (!ModelState.IsValid)
             {
                 return BadRequest(ModelState);
             }
 
-            IdentityResult result = await _repo.RegisterUser(userModel);
+            IdentityResult result = await _repo.RegisterUser(user);
 
             IHttpActionResult errorResult = GetErrorResult(result);
 

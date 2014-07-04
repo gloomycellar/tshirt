@@ -1,7 +1,7 @@
 ﻿using Newtonsoft.Json;
 using System.Collections.Generic;
 
-namespace tshirt.Core.Entities
+namespace tshirt.Core.Entities.Product
 {
     public class UserDetail : EntityBase
     {

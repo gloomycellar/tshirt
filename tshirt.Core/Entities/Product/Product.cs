@@ -2,7 +2,7 @@
 using Newtonsoft.Json.Converters;
 using System.Collections.Generic;
 
-namespace tshirt.Core.Entities
+namespace tshirt.Core.Entities.Product
 {
     public abstract class Product : EntityBase
     {

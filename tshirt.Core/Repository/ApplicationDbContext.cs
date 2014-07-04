@@ -2,7 +2,8 @@
 using Microsoft.AspNet.Identity.EntityFramework;
 using System.Data.Entity;
 using tshirt.Core.Entities;
-using tshirt.Core.Entities.ConcreteProducts;
+using tshirt.Core.Entities.Product;
+using tshirt.Core.Entities.Product.ConcreteProducts;
 
 namespace tshirt.Core.Repository
 {

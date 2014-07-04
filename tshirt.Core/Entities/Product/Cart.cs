@@ -2,7 +2,7 @@
 using System.Linq;
 using tshirt.Core.Extensions;
 
-namespace tshirt.Core.Entities
+namespace tshirt.Core.Entities.Product
 {
     public class Cart : EntityBase
     {
@@ -12,7 +12,7 @@ namespace tshirt.Core.Entities
         public Cart()
         {
             cartItems = new List<CartItem>();
-            paymentType = Entities.PaymentType.CreditCard;
+            paymentType = PaymentType.CreditCard;
         }
 
         public virtual IEnumerable<CartItem> CartItems { get { return cartItems; } }

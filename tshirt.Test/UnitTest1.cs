@@ -1,10 +1,10 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System.Collections.Generic;
 using tshirt.Core.Entities;
-using tshirt.Core.Entities.ConcreteProducts;
 using tshirt.Core.Repository;
 using System.Linq;
 using System.Data.Entity;
+using tshirt.Core.Entities.Product.ConcreteProducts;
 
 namespace tshirt.Test
 {

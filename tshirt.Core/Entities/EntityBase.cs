@@ -5,7 +5,6 @@ namespace tshirt.Core.Entities
 {
     public abstract class EntityBase
     {
-
         [Key]
         [JsonProperty("id")]
         public int Id { get; set; }

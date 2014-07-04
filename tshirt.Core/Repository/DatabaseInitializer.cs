@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using tshirt.Core.Entities;
-using tshirt.Core.Entities.ConcreteProducts;
+using tshirt.Core.Entities.Product.ConcreteProducts;
 
 namespace tshirt.Core.Repository
 {

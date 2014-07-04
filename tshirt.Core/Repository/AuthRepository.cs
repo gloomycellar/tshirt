@@ -6,6 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using tshirt.Core.Entities;
+using tshirt.Core.Entities.Auth;
 
 namespace tshirt.Core.Repository
 {

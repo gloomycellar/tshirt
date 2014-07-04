@@ -1,6 +1,6 @@
 ﻿using Newtonsoft.Json;
 
-namespace tshirt.Core.Entities
+namespace tshirt.Core.Entities.Product
 {
     public class AddressDetail //: EntityBase
     {

@@ -3,7 +3,7 @@ using Newtonsoft.Json.Converters;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace tshirt.Core.Entities.ConcreteProducts
+namespace tshirt.Core.Entities.Product.ConcreteProducts
 {    
     public class Tshirt : Product
     {

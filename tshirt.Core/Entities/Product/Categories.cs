@@ -1,5 +1,5 @@
 ﻿
-namespace tshirt.Core.Entities
+namespace tshirt.Core.Entities.Product
 {
     public enum Category
     {

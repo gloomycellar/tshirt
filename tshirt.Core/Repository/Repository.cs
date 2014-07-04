@@ -3,6 +3,7 @@ using System;
 using System.Data.Entity;
 using System.Linq;
 using tshirt.Core.Entities;
+using tshirt.Core.Entities.Product;
 using tshirt.Core.Extensions;
 
 namespace tshirt.Core.Repository
