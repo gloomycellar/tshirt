@@ -16,7 +16,6 @@ namespace tshirt.App_Start
 
         public override async Task GrantResourceOwnerCredentials(OAuthGrantResourceOwnerCredentialsContext context)
         {
-
             context.OwinContext.Response.Headers.Add("Access-Control-Allow-Origin", new[] { "*" });
 
             using (IAuthRepository repo = DependencyResolver.ResolveType<IAuthRepository>())

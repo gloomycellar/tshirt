@@ -189,7 +189,6 @@
     <Folder Include="admin\css\plugins\morris\" />
     <Folder Include="App_Data\" />
     <Folder Include="entities\" />
-    <Folder Include="images\" />
     <Folder Include="themes\js\images\" />
     <Folder Include="themes\js\js\" />
   </ItemGroup>
@@ -269,6 +268,28 @@
     <Content Include="controllers\productDetails.js" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="services\CartService.js" />
+    <Content Include="store_content\T-shirt\Cat.jpg" />
+    <Content Include="store_content\T-shirt\Cat_glasses.jpg" />
+    <Content Include="store_content\T-shirt\City.jpg" />
+    <Content Include="store_content\T-shirt\City_2.jpg" />
+    <Content Include="store_content\T-shirt\City_3.jpg" />
+    <Content Include="store_content\T-shirt\City_4.jpg" />
+    <Content Include="store_content\T-shirt\Differernt.jpg" />
+    <Content Include="store_content\T-shirt\Flowers.jpg" />
+    <Content Include="store_content\T-shirt\Glam.jpg" />
+    <Content Include="store_content\T-shirt\glam_2.jpg" />
+    <Content Include="store_content\T-shirt\glam_3.jpg" />
+    <Content Include="store_content\T-shirt\glam_4.jpg" />
+    <Content Include="store_content\T-shirt\glam_5.jpg" />
+    <Content Include="store_content\T-shirt\glam_6.jpg" />
+    <Content Include="store_content\T-shirt\glam_7.jpg" />
+    <Content Include="store_content\T-shirt\Hold-on.jpg" />
+    <Content Include="store_content\T-shirt\Home_made_pumkin_bread.jpg" />
+    <Content Include="store_content\T-shirt\La_villa.jpg" />
+    <Content Include="store_content\T-shirt\Network-expertise.jpg" />
+    <Content Include="store_content\T-shirt\Owl_art.jpg" />
+    <Content Include="store_content\T-shirt\Pioneer vintage.jpg" />
+    <Content Include="store_content\T-shirt\Vintage.jpg" />
     <Content Include="views\cart.html" />
     <Content Include="views\checkout.html" />
     <Content Include="views\register.html" />
@@ -742,6 +763,7 @@
     <Content Include="scripts\_references.js" />
     <Content Include="scripts\version.json" />
     <Content Include="scripts\jquery-2.1.1.min.map" />
+    <Content Include="store_content\T-shirt.zip" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\tshirt.Core\tshirt.Core.csproj">
