@@ -267,6 +267,7 @@
     <Content Include="controllers\main.js" />
     <Content Include="controllers\productDetails.js" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="services\AuthService.js" />
     <Content Include="services\CartService.js" />
     <Content Include="store_content\T-shirt\Cat.jpg" />
     <Content Include="store_content\T-shirt\Cat_glasses.jpg" />

@@ -11,7 +11,7 @@ namespace tshirt.Test
     [TestClass]
     public class UnitTest1
     {
-        //[Ignore]
+        [Ignore]
         [TestMethod]
         public void TestMethod1()
         {
