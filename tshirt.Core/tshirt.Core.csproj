@@ -65,6 +65,12 @@
     <Reference Include="Newtonsoft.Json">
       <HintPath>..\packages\Newtonsoft.Json.6.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
+    <Reference Include="Ninject">
+      <HintPath>..\packages\Ninject.3.2.2.0\lib\net45-full\Ninject.dll</HintPath>
+    </Reference>
+    <Reference Include="Ninject.Web.Common">
+      <HintPath>..\packages\Ninject.Web.Common.3.2.2.0\lib\net45-full\Ninject.Web.Common.dll</HintPath>
+    </Reference>
     <Reference Include="Owin">
       <HintPath>..\packages\Owin.1.0\lib\net40\Owin.dll</HintPath>
     </Reference>
@@ -96,6 +102,7 @@
     <Compile Include="Entities\Auth\User.cs" />
     <Compile Include="Entities\Product\UserDetail.cs" />
     <Compile Include="Extensions\EnumerableExtensions.cs" />
+    <Compile Include="Helpers\DependencyResolver.cs" />
     <Compile Include="Migrations\201406160654079_InitialCreate.cs" />
     <Compile Include="Migrations\201406160654079_InitialCreate.Designer.cs">
       <DependentUpon>201406160654079_InitialCreate.cs</DependentUpon>
@@ -109,6 +116,7 @@
     <Compile Include="Repository\ApplicationDbContext.cs" />
     <Compile Include="Repository\AuthRepository.cs" />
     <Compile Include="Repository\DatabaseInitializer.cs" />
+    <Compile Include="Repository\IAuthRepository.cs" />
     <Compile Include="Repository\IDbContext.cs" />
     <Compile Include="Repository\IRepository.cs" />
     <Compile Include="Repository\Repository.cs" />

@@ -2,6 +2,7 @@
 using Microsoft.Owin.Security.OAuth;
 using System.Security.Claims;
 using System.Threading.Tasks;
+using tshirt.Core.Helpers;
 using tshirt.Core.Repository;
 
 namespace tshirt.App_Start
@@ -18,9 +19,9 @@ namespace tshirt.App_Start
 
             context.OwinContext.Response.Headers.Add("Access-Control-Allow-Origin", new[] { "*" });
 
-            using (AuthRepository _repo = new AuthRepository())
+            using (IAuthRepository repo = DependencyResolver.ResolveType<IAuthRepository>())
             {
-                IdentityUser user = await _repo.FindUser(context.UserName, context.Password);
+                IdentityUser user = await repo.FindUser(context.UserName, context.Password);
 
                 if (user == null)
                 {
@@ -29,12 +30,11 @@ namespace tshirt.App_Start
                 }
             }
 
-            var identity = new ClaimsIdentity(context.Options.AuthenticationType);
+            ClaimsIdentity identity = new ClaimsIdentity(context.Options.AuthenticationType);
             identity.AddClaim(new Claim("sub", context.UserName));
             identity.AddClaim(new Claim("role", "user"));
 
             context.Validated(identity);
-
         }
     }
 }

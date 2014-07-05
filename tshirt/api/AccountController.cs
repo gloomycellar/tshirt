@@ -9,11 +9,11 @@ namespace tshirt.api
     [RoutePrefix("api/Account")]
     public class AccountController : ApiController
     {
-        private AuthRepository _repo = null;
+        private IAuthRepository repo;
 
-        public AccountController()
+        public AccountController(IAuthRepository repo)
         {
-            _repo = new AuthRepository();
+            this.repo = repo;
         }
 
         // POST api/Account/Register
@@ -26,7 +26,7 @@ namespace tshirt.api
                 return BadRequest(ModelState);
             }
 
-            IdentityResult result = await _repo.RegisterUser(user);
+            IdentityResult result = await repo.RegisterUser(user);
 
             IHttpActionResult errorResult = GetErrorResult(result);
 
@@ -42,7 +42,7 @@ namespace tshirt.api
         {
             if (disposing)
             {
-                _repo.Dispose();
+                repo.Dispose();
             }
 
             base.Dispose(disposing);
