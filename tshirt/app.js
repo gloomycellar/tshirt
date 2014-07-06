@@ -27,7 +27,7 @@ var app = angular
         })
         .when('/register', {
             templateUrl: 'views/register.html',
-            controller: 'register'
+            controller: 'login'
         })
         .otherwise({
             redirectTo: '/'
