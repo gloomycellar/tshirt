@@ -1,0 +1,61 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+
+    <!--<link rel="stylesheet" href="content/bootstrap.css">-->
+    <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="content/bootstrap-theme.css">
+
+    <link href="bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet">
+    <link href="themes/css/bootstrappage.css" rel="stylesheet" />
+    <link href="themes/css/flexslider.css" rel="stylesheet" />
+    <link href="themes/css/main.css" rel="stylesheet" />
+</head>
+<body ng-app="tshirtApp">
+
+    <div id="top-bar" class="container">
+        <div class="row">
+            <div class="span4">
+                <form method="POST" class="search_form">
+                    <input type="text" class="input-block-level search-query" placeholder="eg. T-sirt">
+                </form>
+            </div>
+            <div class="span8">
+                <div class="account pull-right">
+                    <!--<ul class="user-menu" ng-controller="main">-->
+                    <ul class="user-menu" ng-controller="main">
+                        <li><a ng-click="redirect('myaccaunt')">My Account</a></li>
+                        <li><a ng-click="redirect('cart')">Your Cart</a></li>
+                        <li><a ng-click="redirect('checkout')">Checkout</a></li>
+                        <li><a ng-click="redirect('register')">Login</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div data-ng-view="">
+        </div>
+    </div>
+
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular-route.min.js"></script>
+    <script src="scripts/angular-local-storage.min.js"></script>
+
+    <script src="app.js"></script>
+
+    <script type="text/javascript" src="services/ProductService.js"></script>
+    <script src="services/testService.js"></script>
+
+    <script type="text/javascript" src="controllers/main.js"></script>
+    <script src="controllers/loginController.js"></script>
+    <script src="controllers/testController.js"></script>
+
+
+</body>
+</html>

@@ -1,13 +1,14 @@
 ﻿using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.EntityFramework;
 using System.Data.Entity;
+using tshirt.Api.ViewModels.Auth;
 using tshirt.Core.Entities;
 using tshirt.Core.Entities.Product;
 using tshirt.Core.Entities.Product.ConcreteProducts;
 
 namespace tshirt.Core.Repository
 {
-    public class ApplicationDbContext : IdentityDbContext<IdentityUser>, IDbContext
+    public class ApplicationDbContext : IdentityDbContext<User>, IDbContext
     {
         public ApplicationDbContext()
             : base("DefaultConnection")

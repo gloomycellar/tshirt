@@ -1,22 +1,23 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using Microsoft.AspNet.Identity;
+using Microsoft.AspNet.Identity.EntityFramework;
+using Newtonsoft.Json;
+using System.ComponentModel.DataAnnotations;
 
-namespace tshirt.Core.Entities.Auth
+namespace tshirt.Api.ViewModels.Auth
 {
-    public class User
+    public class User : IdentityUser
     {
         [Required]
-        [Display(Name = "User name")]
-        public string UserName { get; set; }
+        [JsonProperty("firstName")]
+        public string FirstName { get; set; }
+
+        [Required]
+        [JsonProperty("lastName")]
+        public string LastName { get; set; }
 
         [Required]
         [StringLength(100, ErrorMessage = "The {0} must be at least {2} characters long.", MinimumLength = 6)]
-        [DataType(DataType.Password)]
-        [Display(Name = "Password")]
+        [JsonProperty("password")]
         public string Password { get; set; }
-
-        [DataType(DataType.Password)]
-        [Display(Name = "Confirm password")]
-        [Compare("Password", ErrorMessage = "The password and confirmation password do not match.")]
-        public string ConfirmPassword { get; set; }
     }
 }

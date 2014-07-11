@@ -1,0 +1,5 @@
+D:\VS2010_Projects\Tests\tshirt\tshirt.UI\bin\tshirt.UI.dll
+D:\VS2010_Projects\Tests\tshirt\tshirt.UI\bin\tshirt.UI.pdb
+D:\VS2010_Projects\Tests\tshirt\tshirt.UI\obj\Debug\tshirt.UI.dll
+D:\VS2010_Projects\Tests\tshirt\tshirt.UI\obj\Debug\tshirt.UI.pdb
+D:\VS2010_Projects\Tests\tshirt\tshirt.UI\obj\Debug\tshirt.UI.csprojResolveAssemblyReference.cache

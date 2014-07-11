@@ -1,0 +1,5 @@
+D:\VS2010_Projects\Tests\AngularJSAuthentication\AngularJSAuthentication.Web\bin\AngularJSAuthentication.Web.dll
+D:\VS2010_Projects\Tests\AngularJSAuthentication\AngularJSAuthentication.Web\bin\AngularJSAuthentication.Web.pdb
+D:\VS2010_Projects\Tests\AngularJSAuthentication\AngularJSAuthentication.Web\obj\Debug\AngularJSAuthentication.Web.csprojResolveAssemblyReference.cache
+D:\VS2010_Projects\Tests\AngularJSAuthentication\AngularJSAuthentication.Web\obj\Debug\AngularJSAuthentication.Web.dll
+D:\VS2010_Projects\Tests\AngularJSAuthentication\AngularJSAuthentication.Web\obj\Debug\AngularJSAuthentication.Web.pdb

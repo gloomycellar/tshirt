@@ -3,32 +3,31 @@ using Microsoft.AspNet.Identity.EntityFramework;
 using System;
 using System.Data.Entity;
 using System.Threading.Tasks;
-using tshirt.Core.Entities.Auth;
+using tshirt.Api.ViewModels.Auth;
 
 namespace tshirt.Core.Repository
 {
     public class AuthRepository : IAuthRepository
     {
         private DbContext context;
-        private UserManager<IdentityUser> userManager;
+        private UserManager<User> userManager;
 
         public AuthRepository(IDbContext context)
         {
             this.context = (DbContext)context;
-            userManager = new UserManager<IdentityUser>(new UserStore<IdentityUser>(this.context));
+            userManager = new UserManager<User>(new UserStore<User>(this.context));
         }
 
         public async Task<IdentityResult> RegisterUser(User user)
         {
-            IdentityUser identityUser = new IdentityUser { UserName = user.UserName };
-            IdentityResult result = await userManager.CreateAsync(identityUser, user.Password);
+            IdentityResult result = await userManager.CreateAsync(user, user.Password);
 
             return result;
         }
 
-        public async Task<IdentityUser> FindUser(string userName, string password)
+        public async Task<User> FindUser(string userName, string password)
         {
-            IdentityUser user = await userManager.FindAsync(userName, password);
+            User user = await userManager.FindAsync(userName, password);
 
             return user;
         }
@@ -37,6 +36,6 @@ namespace tshirt.Core.Repository
         {
             context.Dispose();
             userManager.Dispose();
-        }
+        }        
     }
 }

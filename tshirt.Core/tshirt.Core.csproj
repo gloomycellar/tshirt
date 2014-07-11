@@ -84,6 +84,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Entities\Auth\User.cs" />
     <Compile Include="Entities\Product\Address.cs" />
     <Compile Include="Entities\Product\Availability.cs" />
     <Compile Include="Entities\Product\Cart.cs" />
@@ -99,8 +100,8 @@
     <Compile Include="Entities\Product\ConcreteProducts\Tshirt.cs" />
     <Compile Include="Entities\Product\Size.cs" />
     <Compile Include="Entities\Product\UrlDetails.cs" />
-    <Compile Include="Entities\Auth\User.cs" />
     <Compile Include="Entities\Product\UserDetail.cs" />
+    <Compile Include="Entities\User\UserDetails.cs" />
     <Compile Include="Extensions\EnumerableExtensions.cs" />
     <Compile Include="Helpers\DependencyResolver.cs" />
     <Compile Include="Migrations\201406160654079_InitialCreate.cs" />

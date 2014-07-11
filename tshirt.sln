@@ -1,11 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "tshirt", "tshirt\tshirt.csproj", "{2173A382-142D-498B-8201-7295958DFA57}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "tshirt.Api", "tshirt.Api\tshirt.Api.csproj", "{2173A382-142D-498B-8201-7295958DFA57}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "tshirt.Core", "tshirt.Core\tshirt.Core.csproj", "{71237E1C-D79F-47EC-9728-30B85149D4D7}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "tshirt.Test", "tshirt.Test\tshirt.Test.csproj", "{B926FAC8-5C0D-4683-868E-365599A02502}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "tshirt.UI", "tshirt.UI\tshirt.UI.csproj", "{E4156422-2684-4222-95C2-4B9AE4CBA7E3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -25,6 +27,10 @@ Global
 		{B926FAC8-5C0D-4683-868E-365599A02502}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B926FAC8-5C0D-4683-868E-365599A02502}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B926FAC8-5C0D-4683-868E-365599A02502}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E4156422-2684-4222-95C2-4B9AE4CBA7E3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E4156422-2684-4222-95C2-4B9AE4CBA7E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E4156422-2684-4222-95C2-4B9AE4CBA7E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E4156422-2684-4222-95C2-4B9AE4CBA7E3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
