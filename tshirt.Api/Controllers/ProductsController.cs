@@ -20,7 +20,8 @@ namespace tshirt.Api.Controllers
             return repo.Entities.ToArray();
         }
 
-        public Product Get([FromUri]int id) {
+        public Product Get([FromUri]int id)
+        {
             return repo.Entities.Where(x => x.Id == id).FirstOrDefault();
         }
     }

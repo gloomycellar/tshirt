@@ -13,40 +13,46 @@ app.factory("cartService", function ($http, $q) {
     return {
         cartItems: [],
 
-        add: function (product, quontity) {
-            var current;
-
-            if (quontity < 0) {
-                throw "Quantity cannot be fewer than 0."
-            }
-
+        getItem: function (productId) {
             for (var index = 0; index < this.cartItems.length; index++) {
                 current = this.cartItems[index];
-                if (product.id == current.product.id) {
-                    current.quontity += quontity;
-                    return;
+                if (productId == current.product.id) {
+                    return current;
                 }
             }
 
-            this.cartItems.push(new CartItem(product, quontity));
+            return null;
         },
 
-        remove: function (product, quontity) {
-            var current;
-
+        add: function (product, quontity) {            
             if (quontity < 0) {
                 throw "Quantity cannot be fewer than 0."
             }
 
-            for (var index = 0; index < this.cartItems.length; index++) {
-                current = this.cartItems[index];
-                if (product.id == current.product.id) {
-                    if ((current.quontity - quontity) > 0) {
-                        current.quontity -= quontity;
-                    } else {
-                        this.cartItems.splice(index, 1);
-                    }
-                    return;
+            var current = this.getItem(product.id);
+            if (current != null) {
+                current.quontity += quontity;
+                return;
+            }
+            
+            this.cartItems.push(new CartItem(product, quontity));
+        },
+
+        remove: function (product, quontity) {            
+            if (quontity < 0) {
+                throw "Quantity cannot be fewer than 0."
+            }
+
+            var current = this.getItem(product.id);
+            if (current != null) {
+                if ((current.quontity - quontity) > 0) {
+                    current.quontity -= quontity;
+                } else {
+                    for (var index = 0; index < this.cartItems.length; index++) {
+                        if (product.id == this.cartItems[index].product.id) {
+                            this.cartItems.splice(index, 1);
+                        }
+                    }                    
                 }
             }
         },

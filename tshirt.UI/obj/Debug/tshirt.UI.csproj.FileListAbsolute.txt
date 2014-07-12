@@ -3,3 +3,9 @@ D:\VS2010_Projects\Tests\tshirt\tshirt.UI\bin\tshirt.UI.pdb
 D:\VS2010_Projects\Tests\tshirt\tshirt.UI\obj\Debug\tshirt.UI.dll
 D:\VS2010_Projects\Tests\tshirt\tshirt.UI\obj\Debug\tshirt.UI.pdb
 D:\VS2010_Projects\Tests\tshirt\tshirt.UI\obj\Debug\tshirt.UI.csprojResolveAssemblyReference.cache
+C:\Projects\tshirt\tshirt.UI\bin\tshirt.UI.dll.config
+C:\Projects\tshirt\tshirt.UI\bin\tshirt.UI.dll
+C:\Projects\tshirt\tshirt.UI\bin\tshirt.UI.pdb
+C:\Projects\tshirt\tshirt.UI\obj\Debug\tshirt.UI.csprojResolveAssemblyReference.cache
+C:\Projects\tshirt\tshirt.UI\obj\Debug\tshirt.UI.dll
+C:\Projects\tshirt\tshirt.UI\obj\Debug\tshirt.UI.pdb

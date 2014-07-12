@@ -66,3 +66,4 @@ D:\VS2010_Projects\Tests\tshirt\tshirt.Core\obj\Debug\tshirt.Core.csproj.Generat
 D:\VS2010_Projects\Tests\tshirt\tshirt.Core\obj\Debug\tshirt.Core.dll
 D:\VS2010_Projects\Tests\tshirt\tshirt.Core\obj\Debug\tshirt.Core.pdb
 D:\VS2010_Projects\Tests\tshirt\tshirt.Core\obj\Debug\tshirt.Core.csprojResolveAssemblyReference.cache
+C:\Projects\tshirt\tshirt.Core\obj\Debug\tshirt.Core.Migrations.Inheritance.resources

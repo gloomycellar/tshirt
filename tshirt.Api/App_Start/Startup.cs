@@ -5,10 +5,12 @@ using Ninject.Web.Common.OwinHost;
 using Ninject.Web.WebApi.OwinHost;
 using Owin;
 using System;
+using System.Data.Entity;
 using System.Web.Http;
 using tshirt.Api.App_Start;
 using tshirt.Api.ViewModels.Auth;
 using tshirt.Core.Helpers;
+using tshirt.Core.Repository;
 
 [assembly: OwinStartup(typeof(tshirt.Api.Startup))]
 namespace tshirt.Api

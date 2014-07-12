@@ -5,6 +5,7 @@ using tshirt.Core.Repository;
 using System.Linq;
 using System.Data.Entity;
 using tshirt.Core.Entities.Product.ConcreteProducts;
+using tshirt.Core.Entities.Product;
 
 namespace tshirt.Test
 {
@@ -22,9 +23,9 @@ namespace tshirt.Test
         [TestMethod]
         public void TestMethod2()
         {
-            ApplicationDbContext context = new ApplicationDbContext();
-            var a = context.Set<Tshirt>().ToArray();
-            Assert.AreNotEqual(0, context.Set<Tshirt>().Count());        
+            IRepository<Tshirt> repo = new Repository<Tshirt>(new ApplicationDbContext());
+
+            var a = repo.Entities.ToArray();
         }
     }
 }

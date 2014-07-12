@@ -27,6 +27,8 @@ namespace tshirt.Core.Migrations
             //      new Person { FullName = "Rowan Miller" }
             //    );
             //
+
+            context.Seed();
         }
     }
 }
