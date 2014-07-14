@@ -1,6 +1,9 @@
 ﻿'use strict';
 
 app.controller('main', function ($scope, $location, productService, authService) {
+
+    $scope.location = $location;
+
     productService.getProducts().then(function (data) {
         var result = [],
             iterator = 0
