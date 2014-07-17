@@ -10,10 +10,10 @@ namespace tshirt.Core.Repository
     public interface IRepository<TEntity>
         where TEntity : EntityBase
     {
-        void SaveOrUpdate(params TEntity[] entities);
+        void SaveOrUpdateAcync(params TEntity[] entities);
 
         IQueryable<TEntity> Entities { get; }
 
-        void Delete(params TEntity[] entities);
+        void DeleteAsync(params TEntity[] entities);
     }
 }

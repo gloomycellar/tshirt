@@ -18,7 +18,7 @@ namespace tshirt.Core.Repository
             this.context = context;
         }
 
-        public void SaveOrUpdate(params TEntity[] entities)
+        public async void SaveOrUpdateAcync(params TEntity[] entities)
         {
             TEntity attachedEntity;
             IDbSet<TEntity> set = context.Set<TEntity>();
@@ -36,7 +36,7 @@ namespace tshirt.Core.Repository
                 }
             }
 
-            context.SaveChanges();
+            await context.SaveChangesAsync();
         }
 
         public IQueryable<TEntity> Entities
@@ -44,10 +44,10 @@ namespace tshirt.Core.Repository
             get { return context.Set<TEntity>(); }
         }
 
-        public void Delete(params TEntity[] entities)
+        public async void DeleteAsync(params TEntity[] entities)
         {
             entities.ForEach(x => context.Set<TEntity>().Remove(x));
-            context.SaveChanges();
+            await context.SaveChangesAsync();
         }
 
         public void Dispose()

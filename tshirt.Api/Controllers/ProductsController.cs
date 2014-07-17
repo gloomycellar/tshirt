@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
+using System.Threading.Tasks;
 using System.Web.Http;
 using tshirt.Core.Entities.Product;
 using tshirt.Core.Repository;
@@ -15,14 +16,14 @@ namespace tshirt.Api.Controllers
             this.repo = repo;
         }
 
-        public IEnumerable<Product> Get()
+        public async Task<IEnumerable<Product>> Get()
         {
-            return repo.Entities.ToArray();
+            return await Task.Run(() => repo.Entities.ToArray());
         }
 
-        public Product Get([FromUri]int id)
+        public async Task<Product> Get([FromUri]int id)
         {
-            return repo.Entities.Where(x => x.Id == id).FirstOrDefault();
+            return await Task.Run(() => repo.Entities.Where(x => x.Id == id).FirstOrDefault());
         }
     }
 }
