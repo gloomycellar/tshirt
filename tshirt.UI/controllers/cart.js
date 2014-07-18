@@ -9,4 +9,6 @@ app.controller('cart', function ($scope, $routeParams, $location, cartService) {
         var item = cartService.getItem(id);
         cartService.remove(item.product, item.quontity);
     };
+
+    $scope.checkout = function () { $location.path("/checkout") };
 });

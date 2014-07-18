@@ -37,7 +37,7 @@
         <hr />
         <p class="buttons center">
             <button class="btn" ng-click="continue()" type="button">Continue shopping</button>
-            <button data-ng-hide="cart.cartItems.length == 0" class="btn btn-inverse" type="submit">Checkout</button>
+            <button data-ng-hide="cart.cartItems.length == 0" ng-click="checkout()" class="btn btn-inverse" type="submit">Checkout</button>
         </p>
     </div>
 </div>

@@ -1,7 +1,7 @@
 ﻿'use strict';
 
 var app = angular
-  .module('tshirtApp', ['ngRoute', 'LocalStorageModule'])
+  .module('tshirtApp', ['ngRoute', 'LocalStorageModule', 'ui.bootstrap'])
   .config(function ($routeProvider) {
       $routeProvider
         .when('/', {
