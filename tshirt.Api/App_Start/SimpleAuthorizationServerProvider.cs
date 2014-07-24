@@ -18,7 +18,7 @@ namespace tshirt.Api.App_Start
         {
             context.OwinContext.Response.Headers.Add("Access-Control-Allow-Origin", new[] { "*" });
 
-            using (IAuthRepository repo = DependencyResolver.ResolveType<IAuthRepository>())
+            using (IAccountRepository repo = DependencyResolver.ResolveType<IAccountRepository>())
             {
                 IdentityUser user = await repo.FindUser(context.UserName, context.Password);
 

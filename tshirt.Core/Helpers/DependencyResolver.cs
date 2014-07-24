@@ -31,7 +31,7 @@ namespace tshirt.Core.Helpers
         {
             Kernel.Bind<IDbContext>().To<ApplicationDbContext>();
             Kernel.Bind(typeof(IRepository<>)).To(typeof(Repository<>));
-            Kernel.Bind(typeof(IAuthRepository)).To(typeof(AuthRepository));
+            Kernel.Bind(typeof(IAccountRepository)).To(typeof(AccountRepository));
         }
     }
 }

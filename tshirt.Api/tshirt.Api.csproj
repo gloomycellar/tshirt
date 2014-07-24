@@ -202,7 +202,8 @@
     <Compile Include="Controllers\OrdersController.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="App_Start\Startup.cs" />
-    <Compile Include="ViewModels\Auth\RegisterData.cs" />
+    <Compile Include="ViewModels\Account\RegisterData.cs" />
+    <Compile Include="ViewModels\Account\UserData.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="index.html" />

@@ -3,7 +3,7 @@ using Microsoft.AspNet.Identity.EntityFramework;
 using Newtonsoft.Json;
 using System.ComponentModel.DataAnnotations;
 
-namespace tshirt.Api.ViewModels.Auth
+namespace tshirt.Api.ViewModels.Account
 {
     public class RegisterData
     {

@@ -104,6 +104,7 @@
     <Content Include="controllers\testController.js" />
     <Content Include="services\configService.js" />
     <Content Include="services\testService.js" />
+    <Content Include="services\userService.js" />
     <Content Include="template\accordion\accordion-group.html" />
     <Content Include="template\accordion\accordion.html" />
     <Content Include="template\alert\alert.html" />
@@ -682,7 +683,8 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="admin\css\plugins\morris\" />
-    <Folder Include="App_Themes\" />
+    <Folder Include="core\" />
+    <Folder Include="directives\" />
     <Folder Include="themes\js\images\" />
     <Folder Include="themes\js\js\" />
   </ItemGroup>

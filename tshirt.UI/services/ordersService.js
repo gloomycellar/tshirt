@@ -1,14 +1,9 @@
 ﻿'use strict';
-app.factory('ordersService', ['$http', function ($http) {
-
-    //var serviceBase = 'http://localhost:26264/';
-    //var serviceBase = 'http://ngauthenticationapi.azurewebsites.net/';
+app.factory('ordersService', function ($http) {
     var serviceBase = "http://localhost:8088/";
-
     var ordersServiceFactory = {};
 
     var _getOrders = function () {
-
         return $http.get(serviceBase + 'api/orders').then(function (results) {
             return results;
         });
@@ -18,4 +13,4 @@ app.factory('ordersService', ['$http', function ($http) {
 
     return ordersServiceFactory;
 
-}]);
+});

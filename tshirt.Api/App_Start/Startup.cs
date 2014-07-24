@@ -5,12 +5,11 @@ using Ninject.Web.Common.OwinHost;
 using Ninject.Web.WebApi.OwinHost;
 using Owin;
 using System;
-using System.Data.Entity;
 using System.Web.Http;
 using tshirt.Api.App_Start;
-using tshirt.Api.ViewModels.Auth;
+using tshirt.Api.ViewModels.Account;
+using tshirt.Core.Entities.Account;
 using tshirt.Core.Helpers;
-using tshirt.Core.Repository;
 
 [assembly: OwinStartup(typeof(tshirt.Api.Startup))]
 namespace tshirt.Api
@@ -45,6 +44,7 @@ namespace tshirt.Api
         public void CreateMappings()
         {
             Mapper.CreateMap<RegisterData, User>().ForMember(dest => dest.UserName, opt => opt.MapFrom(v => v.Email));
+            Mapper.CreateMap<User, UserData>();
         }
     }
 }

@@ -17,10 +17,10 @@ namespace tshirt.Core.Entities.Product
         [JsonProperty("phones")]
         public ICollection<string> Phones { get; set; }
 
-        [JsonProperty("addressDetails")]
-        public ICollection<AddressDetail> AddressDetails { get; set; }
+        //[JsonProperty("addressDetails")]
+        //public ICollection<AddressDetail> AddressDetails { get; set; }
 
-        [JsonProperty("cardDetails")]
-        public ICollection<CreditCardDetail> CardDetails { get; set; }
+        //[JsonProperty("cardDetails")]
+        //public ICollection<CreditCardDetail> CardDetails { get; set; }
     }
 }

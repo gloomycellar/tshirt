@@ -84,8 +84,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Entities\Auth\User.cs" />
-    <Compile Include="Entities\Product\Address.cs" />
+    <Compile Include="Entities\Account\User.cs" />
+    <Compile Include="Entities\Account\AddressDetail.cs" />
     <Compile Include="Entities\Product\Availability.cs" />
     <Compile Include="Entities\Product\Cart.cs" />
     <Compile Include="Entities\Product\CartItem.cs" />
@@ -93,7 +93,7 @@
     <Compile Include="Entities\Product\ColorDetail.cs" />
     <Compile Include="Entities\Product\Color.cs" />
     <Compile Include="Entities\Product\SizeDetail.cs" />
-    <Compile Include="Entities\Product\CreditCardDetail.cs" />
+    <Compile Include="Entities\Account\CreditCardDetail.cs" />
     <Compile Include="Entities\EntityBase.cs" />
     <Compile Include="Entities\Product\PaymentType.cs" />
     <Compile Include="Entities\Product\Product.cs" />
@@ -118,9 +118,9 @@
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repository\ApplicationDbContext.cs" />
-    <Compile Include="Repository\AuthRepository.cs" />
+    <Compile Include="Repository\AccountRepository.cs" />
     <Compile Include="Repository\DatabaseInitializer.cs" />
-    <Compile Include="Repository\IAuthRepository.cs" />
+    <Compile Include="Repository\IAccountRepository.cs" />
     <Compile Include="Repository\IDbContext.cs" />
     <Compile Include="Repository\IRepository.cs" />
     <Compile Include="Repository\Repository.cs" />

@@ -1,8 +1,8 @@
 ﻿using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.EntityFramework;
 using System.Data.Entity;
-using tshirt.Api.ViewModels.Auth;
 using tshirt.Core.Entities;
+using tshirt.Core.Entities.Account;
 using tshirt.Core.Entities.Product;
 using tshirt.Core.Entities.Product.ConcreteProducts;
 
