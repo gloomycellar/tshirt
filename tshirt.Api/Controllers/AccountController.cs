@@ -21,6 +21,7 @@ namespace tshirt.Apiaccount.Controllers
 
         [AllowAnonymous]
         [Route("Register")]
+        [HttpPost]
         public async Task<IHttpActionResult> Register(RegisterData data)
         {
             if (!ModelState.IsValid)
@@ -41,12 +42,22 @@ namespace tshirt.Apiaccount.Controllers
             return Ok();
         }
 
+        [HttpGet]
         public async Task<UserData> UserDetails()
         {
             string userName = ClaimsPrincipal.Current.FindFirst("sub").Value;
             User user = await repo.FindUserByName(userName);
 
             return Mapper.Map<UserData>(user);
+        }
+
+        [HttpPost]
+        public async Task UserDetails(UserData userData)
+        {
+            string userName = ClaimsPrincipal.Current.FindFirst("sub").Value;
+            User user = await repo.FindUserByName(userName);
+
+            //return Mapper.Map<UserData>(user);
         }
 
         protected override void Dispose(bool disposing)

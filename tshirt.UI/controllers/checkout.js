@@ -1,10 +1,7 @@
 ﻿'use strict';
 
 app.controller('checkout', function ($scope, $location, authService, userService, cartService) {
-    $scope.newUserLoginType = "register";
-    $scope.checkoutData = {
-    };
-
+    
     userService.getUserInfo().then(function (response) {
         $scope.userInfo = response.data;
     },
@@ -14,5 +11,6 @@ app.controller('checkout', function ($scope, $location, authService, userService
     });
 
     $scope.confirmOrder = function () {
+
     }
 });
