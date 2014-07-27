@@ -22,13 +22,10 @@ namespace tshirt.Api.ViewModels.Account
         [JsonProperty("lastName")]
         public string LastName { get; set; }
 
-        [JsonProperty("phones")]
-        public ICollection<string> Phones { get; set; }
+        [JsonProperty("phone")]
+        public string Phone { get; set; }
 
         [JsonProperty("addressDetails")]
-        public ICollection<AddressDetail> AddressDetails { get; set; }
-
-        [JsonProperty("cardDetails")]
-        public ICollection<CreditCardDetail> CardDetails { get; set; }
+        public AddressDetailsData AddressDetails { get; set; }
     }
 }

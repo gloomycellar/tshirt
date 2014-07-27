@@ -1,6 +1,6 @@
 ﻿'use strict';
 
-app.controller('checkout', function ($scope, $location, authService, userService) {
+app.controller('checkout', function ($scope, $location, authService, userService, cartService) {
     $scope.newUserLoginType = "register";
     $scope.checkoutData = {
     };
@@ -12,4 +12,7 @@ app.controller('checkout', function ($scope, $location, authService, userService
         console.log(err);
         //$scope.loginMessage = err.error_description;
     });
+
+    $scope.confirmOrder = function () {
+    }
 });

@@ -20,7 +20,7 @@
                     {{loginMessage}}
                 </div>
                 <div class="control-group">
-                    <input tabindex="3" class="btn btn-inverse large" ng-disabled="loginForm.$invalid" data-ng-click="login()" type="submit" value="Sign into your account">
+                    <input tabindex="3" class="btn btn-inverse large" data-ng-click="login()" type="submit" value="Sign into your account">
                     <hr>
                     <p class="reset">Recover your <a tabindex="4" href="#" title="Recover your account">account</a></p>
                 </div>
@@ -60,7 +60,7 @@
                 </div>
                 <hr>
                 <div class="actions">
-                    <input tabindex="9" class="btn btn-inverse large" type="submit" ng-disabled="registerForm.$invalid" ng-click="signUp()" value="Create your account">
+                    <input tabindex="9" class="btn btn-inverse large" type="submit" ng-click="signUp()" value="Create your account">
                 </div>
             </fieldset>
         </form>

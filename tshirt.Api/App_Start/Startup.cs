@@ -44,7 +44,8 @@ namespace tshirt.Api
         public void CreateMappings()
         {
             Mapper.CreateMap<RegisterData, User>().ForMember(dest => dest.UserName, opt => opt.MapFrom(v => v.Email));
-            Mapper.CreateMap<User, UserData>();
+            Mapper.CreateMap<AddressDetailsData, AddressDetails>().ReverseMap();
+            Mapper.CreateMap<User, UserData>().ReverseMap();
         }
     }
 }

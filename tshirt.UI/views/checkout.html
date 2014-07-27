@@ -1,54 +1,56 @@
-﻿<div class="row-fluid">
-    <div class="span6">
-        <h4>Your Personal Details</h4>
-        <div class="control-group">
-            <label class="control-label"><span class="required">*</span> First Name</label>
-            <div class="controls">
-                <input type="text" placeholder="Enter your first name" class="input-xlarge" ng-model="userInfo.firstName">
+﻿<form name="checkoutForm">
+    <div class="row-fluid">
+        <div class="span6">
+            <h4>Your Personal Details</h4>
+            <div class="control-group">
+                <label class="control-label"><span class="required">*</span> First Name</label>
+                <div class="controls">
+                    <input type="text" placeholder="Enter your first name" class="input-xlarge" ng-model="userInfo.firstName">
+                </div>
+            </div>
+            <div class="control-group">
+                <label class="control-label"><span class="required">*</span> Last Name</label>
+                <div class="controls">
+                    <input type="text" placeholder="Enter your last name" class="input-xlarge" ng-model="userInfo.lastName">
+                </div>
+            </div>
+            <div class="control-group">
+                <label class="control-label"><span class="required">*</span> Email Address</label>
+                <div class="controls">
+                    <input type="text" placeholder="Enter your email address" class="input-xlarge" ng-model="userInfo.email">
+                </div>
+            </div>
+            <div class="control-group">
+                <label class="control-label"><span class="required">*</span> Telephone</label>
+                <div class="controls">
+                    <input type="text" placeholder="Enter your telephone" class="input-xlarge" ng-model="userInfo.phone">
+                </div>
             </div>
         </div>
-        <div class="control-group">
-            <label class="control-label"><span class="required">*</span> Last Name</label>
-            <div class="controls">
-                <input type="text" placeholder="Enter your last name" class="input-xlarge" ng-model="userInfo.lastName">
+        <div class="span6">
+            <h4>Your Address</h4>
+            <div class="control-group">
+                <label class="control-label"><span class="required">*</span> Address:</label>
+                <div class="controls">
+                    <input type="text" placeholder="Enter your address" class="input-xlarge" ng-model="userInfo.addressDetails.address">
+                </div>
             </div>
-        </div>
-        <div class="control-group">
-            <label class="control-label"><span class="required">*</span> Email Address</label>
-            <div class="controls">
-                <input type="text" placeholder="Enter your email address" class="input-xlarge" ng-model="userInfo.email">
+            <div class="control-group">
+                <label class="control-label"><span class="required">*</span> City:</label>
+                <div class="controls">
+                    <input type="text" placeholder="Enter your city" class="input-xlarge" ng-model="userInfo.addressDetails.city">
+                </div>
             </div>
-        </div>
-        <div class="control-group">
-            <label class="control-label"><span class="required">*</span> Telephone</label>
-            <div class="controls">
-                <input type="text" placeholder="Enter your telephone" class="input-xlarge">
+            <div class="control-group">
+                <label class="control-label"><span class="required">*</span> Post Code:</label>
+                <div class="controls">
+                    <input type="text" placeholder="Enter your post code" class="input-xlarge" ng-model="userInfo.addressDetails.postalCode">
+                </div>
             </div>
         </div>
     </div>
-    <div class="span6">
-        <h4>Your Address</h4>
-        <div class="control-group">
-            <label class="control-label"><span class="required">*</span> Address:</label>
-            <div class="controls">
-                <input type="text" placeholder="Enter your address" class="input-xlarge">
-            </div>
-        </div>
-        <div class="control-group">
-            <label class="control-label"><span class="required">*</span> City:</label>
-            <div class="controls">
-                <input type="text" placeholder="Enter your city" class="input-xlarge">
-            </div>
-        </div>
-        <div class="control-group">
-            <label class="control-label"><span class="required">*</span> Post Code:</label>
-            <div class="controls">
-                <input type="text" placeholder="Enter your post code" class="input-xlarge">
-            </div>
-        </div>
-    </div>
-</div>
-<hr />
-<p class="actions">
-    <button class="btn btn-inverse" ng-click="confirmOrder()">Confirm order</button>
-</p>
+    <hr />
+    <p class="actions">
+        <input type="submit" class="btn btn-inverse" value="Confirm order" ng-click="confirmOrder()" />
+    </p>
+</form>

@@ -30,7 +30,7 @@
                 <div class="account pull-right">
                     <ul class="user-menu" ng-controller="main">
                         <li data-ng-hide="!authentication.isAuth"><a ng-click="redirect('myaccaunt')">My Account</a></li>
-                        <li><a ng-click="redirect('cart')">Your Cart</a></li>
+                        <li data-ng-hide ="!authentication.isAuth"><a ng-click="redirect('cart')">Your Cart</a></lidata-ng-hide>
                         <li data-ng-hide="!authentication.isAuth"><a ng-click="logOut()">Logout</a></li>
                         <li data-ng-hide="authentication.isAuth"><a ng-click="redirect('register')">Login</a></li>
                     </ul>
@@ -73,7 +73,7 @@
 
         <section class="header_text sub" data-ng-hide="location.path() == '/'">
             <img class="pageBanner" src="themes/images/pageBanner.png" alt="New products">
-            <h4><span>Login or Regsiter</span></h4>
+            <h4><span>{{getPageHeader()}}</span></h4>
         </section>
 
         <section class="main-content" ng-view=""></section>

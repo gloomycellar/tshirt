@@ -18,10 +18,10 @@ namespace tshirt.Core.Entities.Account
         [StringLength(100, ErrorMessage = "The {0} must be at least {2} characters long.", MinimumLength = 6)]        
         public string Password { get; set; }
 
-        public ICollection<string> Phones { get; set; }
+        public string Phone { get; set; }
 
-        public ICollection<AddressDetail> AddressDetails { get; set; }
+        public virtual AddressDetails AddressDetails { get; set; }
 
-        public ICollection<CreditCardDetail> CardDetails { get; set; }
+        public virtual CreditCardDetail CardDetails { get; set; }
     }
 }

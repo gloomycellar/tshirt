@@ -85,7 +85,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Entities\Account\User.cs" />
-    <Compile Include="Entities\Account\AddressDetail.cs" />
+    <Compile Include="Entities\Account\AddressDetails.cs" />
     <Compile Include="Entities\Product\Availability.cs" />
     <Compile Include="Entities\Product\Cart.cs" />
     <Compile Include="Entities\Product\CartItem.cs" />
