@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading.Tasks;
 using tshirt.Core.Entities;
 using tshirt.Core.Entities.Product;
 
@@ -10,7 +11,7 @@ namespace tshirt.Core.Repository
     public interface IRepository<TEntity>
         where TEntity : EntityBase
     {
-        void SaveOrUpdateAcync(params TEntity[] entities);
+        Task SaveOrUpdateAcync(params TEntity[] entities);
 
         IQueryable<TEntity> Entities { get; }
 

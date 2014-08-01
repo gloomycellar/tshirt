@@ -1,6 +1,6 @@
 ﻿'use strict';
 
-app.controller('main', function ($scope, $location, productService, authService) {
+app.controller('mainController', function ($scope, $location, productService, authService) {
 
     $scope.location = $location;
 

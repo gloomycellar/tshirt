@@ -101,9 +101,7 @@
     <Content Include="admin\tables.html" />
     <Content Include="admin\typography.html" />
     <Content Include="admin\views\admin.html" />
-    <Content Include="controllers\testController.js" />
     <Content Include="services\configService.js" />
-    <Content Include="services\testService.js" />
     <Content Include="services\userService.js" />
     <Content Include="template\accordion\accordion-group.html" />
     <Content Include="template\accordion\accordion.html" />
@@ -131,7 +129,6 @@
     <Content Include="template\tooltip\tooltip-popup.html" />
     <Content Include="template\typeahead\typeahead-match.html" />
     <Content Include="template\typeahead\typeahead-popup.html" />
-    <Content Include="views\test_login.html" />
     <Content Include="app.js" />
     <Content Include="bootstrap\css\bootstrap-responsive.css" />
     <Content Include="bootstrap\css\bootstrap-responsive.min.css" />
@@ -142,28 +139,28 @@
     <Content Include="bootstrap\js\bootstrap.js" />
     <Content Include="bootstrap\js\bootstrap.min.js" />
     <Content Include="bootstrap_shoipper_template.png" />
-    <Content Include="cart.html" />
-    <Content Include="checkout.html" />
-    <Content Include="contact.html" />
+    <Content Include="themeTemplate\cart.html" />
+    <Content Include="themeTemplate\checkout.html" />
+    <Content Include="themeTemplate\contact.html" />
     <Content Include="content\bootstrap-theme.css" />
     <Content Include="content\bootstrap-theme.min.css" />
     <Content Include="content\bootstrap.css" />
     <Content Include="content\bootstrap.min.css" />
     <Content Include="content\Site.css" />
-    <Content Include="controllers\cart.js" />
-    <Content Include="controllers\checkout.js" />
+    <Content Include="controllers\cartController.js" />
+    <Content Include="controllers\checkoutController.js" />
     <Content Include="controllers\homeController.js" />
     <Content Include="controllers\indexController.js" />
     <Content Include="controllers\authController.js" />
-    <Content Include="controllers\main.js" />
+    <Content Include="controllers\mainController.js" />
     <Content Include="controllers\ordersController.js" />
     <Content Include="controllers\productDetails.js" />
     <Content Include="controllers\signupController.js" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="index.html" />
-    <Content Include="products.html" />
-    <Content Include="product_detail.html" />
-    <Content Include="register.html" />
+    <Content Include="themeTemplate\products.html" />
+    <Content Include="themeTemplate\product_detail.html" />
+    <Content Include="themeTemplate\register.html" />
     <Content Include="scripts\angular-animate.js" />
     <Content Include="scripts\angular-animate.min.js" />
     <Content Include="scripts\angular-cookies.js" />
@@ -483,9 +480,9 @@
     <Content Include="scripts\_references.js" />
     <Content Include="services\authInterceptorService.js" />
     <Content Include="services\authService.js" />
-    <Content Include="services\CartService.js" />
+    <Content Include="services\cartService.js" />
     <Content Include="services\ordersService.js" />
-    <Content Include="services\ProductService.js" />
+    <Content Include="services\productService.js" />
     <Content Include="store_content\T-shirt\Cat.jpg" />
     <Content Include="store_content\T-shirt\Cat_glasses.jpg" />
     <Content Include="store_content\T-shirt\City.jpg" />
@@ -667,11 +664,9 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="___index.html" />
-    <Content Include="__app.js" />
+    <Content Include="themeTemplate\index.html" />
     <Content Include="content\css\bootstrap.min.css" />
     <Content Include="content\fonts\glyphicons-halflings-regular.svg" />
-    <Content Include="__index.html" />
     <Content Include="scripts\angular-local-storage.min.js" />
     <Content Include="scripts\loading-bar.min.js" />
     <Content Include="Web.config">

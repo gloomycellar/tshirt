@@ -1,6 +1,6 @@
 ﻿'use strict';
 
-app.controller('checkout', function ($scope, $location, authService, userService, cartService) {
+app.controller('checkoutController', function ($scope, $location, authService, userService, cartService) {
     
     userService.getUserInfo().then(function (response) {
         $scope.userInfo = response.data;
@@ -11,6 +11,6 @@ app.controller('checkout', function ($scope, $location, authService, userService
     });
 
     $scope.confirmOrder = function () {
-
+        cartService.saveState();
     }
 });

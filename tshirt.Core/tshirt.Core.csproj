@@ -87,8 +87,8 @@
     <Compile Include="Entities\Account\User.cs" />
     <Compile Include="Entities\Account\AddressDetails.cs" />
     <Compile Include="Entities\Product\Availability.cs" />
-    <Compile Include="Entities\Product\Cart.cs" />
-    <Compile Include="Entities\Product\CartItem.cs" />
+    <Compile Include="Entities\Product\Order.cs" />
+    <Compile Include="Entities\Product\OrderItem.cs" />
     <Compile Include="Entities\Product\Categories.cs" />
     <Compile Include="Entities\Product\ColorDetail.cs" />
     <Compile Include="Entities\Product\Color.cs" />

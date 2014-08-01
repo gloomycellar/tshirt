@@ -2,6 +2,7 @@
 using System;
 using System.Data.Entity;
 using System.Linq;
+using System.Threading.Tasks;
 using tshirt.Core.Entities;
 using tshirt.Core.Entities.Product;
 using tshirt.Core.Extensions;
@@ -18,7 +19,7 @@ namespace tshirt.Core.Repository
             this.context = context;
         }
 
-        public async void SaveOrUpdateAcync(params TEntity[] entities)
+        public async Task SaveOrUpdateAcync(params TEntity[] entities)
         {
             TEntity attachedEntity;
             IDbSet<TEntity> set = context.Set<TEntity>();

@@ -1,6 +1,6 @@
 ﻿'use strict';
 
-app.controller('cart', function ($scope, $routeParams, $location, cartService) {
+app.controller('cartController', function ($scope, $routeParams, $location, cartService) {
     $scope.cart = cartService;
 
     $scope.continue = function () { $location.path('/'); };
@@ -10,5 +10,5 @@ app.controller('cart', function ($scope, $routeParams, $location, cartService) {
         cartService.remove(item.product, item.quontity);
     };
 
-    $scope.checkout = function () { $location.path("/checkout") };
+    $scope.checkout = function () { $location.path("/checkout"); };
 });

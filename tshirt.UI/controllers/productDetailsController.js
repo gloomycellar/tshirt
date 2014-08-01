@@ -1,6 +1,6 @@
 ﻿'use strict';
 
-app.controller('productDetails', function ($scope, $routeParams, productService, cartService) {
+app.controller('productDetailsController', function ($scope, $routeParams, productService, cartService) {
         productService.getProduct($routeParams.productId).then(function (data) {
             $scope.product = data;            
         });

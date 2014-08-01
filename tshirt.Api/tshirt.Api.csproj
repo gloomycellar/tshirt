@@ -199,12 +199,14 @@
     <Compile Include="Controllers\ProductsController.cs" />
     <Compile Include="App_Start\SimpleAuthorizationServerProvider.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
-    <Compile Include="Controllers\OrdersController.cs" />
+    <Compile Include="Controllers\OrderController.cs" />
+    <Compile Include="Helper\UserHelper.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="App_Start\Startup.cs" />
     <Compile Include="ViewModels\Account\AddressDetailsData.cs" />
     <Compile Include="ViewModels\Account\RegisterData.cs" />
     <Compile Include="ViewModels\Account\UserData.cs" />
+    <Compile Include="ViewModels\Cart\CartItemData.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="index.html" />

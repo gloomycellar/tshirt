@@ -3,6 +3,7 @@ using Microsoft.AspNet.Identity;
 using System.Security.Claims;
 using System.Threading.Tasks;
 using System.Web.Http;
+using tshirt.Api.Helper;
 using tshirt.Api.ViewModels.Account;
 using tshirt.Core.Entities.Account;
 using tshirt.Core.Repository;
@@ -43,21 +44,19 @@ namespace tshirt.Apiaccount.Controllers
         }
 
         [HttpGet]
-        public async Task<UserData> UserDetails()
+        public UserData UserDetails()
         {
-            string userName = ClaimsPrincipal.Current.FindFirst("sub").Value;
-            User user = await repo.FindUserByName(userName);
-
-            return Mapper.Map<UserData>(user);
+            return Mapper.Map<UserData>(UserHelper.CurrentUser);
         }
 
         [HttpPost]
-        public async Task UserDetails(UserData userData)
+        public async Task<IHttpActionResult> UserDetails(UserData userData)
         {
             string userName = ClaimsPrincipal.Current.FindFirst("sub").Value;
             User user = await repo.FindUserByName(userName);
 
             //return Mapper.Map<UserData>(user);
+            return Ok();
         }
 
         protected override void Dispose(bool disposing)

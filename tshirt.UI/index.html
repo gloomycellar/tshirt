@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width">
 
     <!--<link rel="stylesheet" href="content/bootstrap.css">-->
-    
+
     <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
     <link rel="stylesheet" href="content/bootstrap-theme.css">
 
@@ -28,9 +28,9 @@
             </div>
             <div class="span8">
                 <div class="account pull-right">
-                    <ul class="user-menu" ng-controller="main">
+                    <ul class="user-menu" ng-controller="mainController">
                         <li data-ng-hide="!authentication.isAuth"><a ng-click="redirect('myaccaunt')">My Account</a></li>
-                        <li data-ng-hide ="!authentication.isAuth"><a ng-click="redirect('cart')">Your Cart</a></lidata-ng-hide>
+                        <li data-ng-hide="!authentication.isAuth"><a ng-click="redirect('cart')">Your Cart</a></lidata-ng-hide>
                         <li data-ng-hide="!authentication.isAuth"><a ng-click="logOut()">Logout</a></li>
                         <li data-ng-hide="authentication.isAuth"><a ng-click="redirect('register')">Login</a></li>
                     </ul>
@@ -38,7 +38,7 @@
             </div>
         </div>
     </div>
-    <div id="wrapper" class="container" ng-controller="main">
+    <div id="wrapper" class="container" ng-controller="mainController">
         <section class="navbar main-menu">
             <div class="navbar-inner main-menu">
                 <a ng-click="redirect('/')" class="logo pull-left">
@@ -123,12 +123,12 @@
     <!--<script type="text/javascript" src="scripts/jquery-2.1.1.min.js"></script>
     <script type="text/javascript" src="scripts/jquery-2.1.1.intellisense.js"></script>-->
     <script type="text/javascript" src="scripts/bootstrap.min.js"></script>
-    
+
     <script type="text/javascript" src="scripts/angular.js"></script>
     <script type="text/javascript" src="scripts/angular-route.js"></script>
 
-    
-<!--    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular.min.js"></script>
+
+    <!--    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular.min.js"></script>
     <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular-route.min.js"></script>-->
 
 
@@ -141,22 +141,6 @@
     <script src="themes/js/superfish.js"></script>
     <script src="themes/js/jquery.scrolltotop.js"></script>
     <script src="themes/js/common.js"></script>
-    <!--<script src="themes/js/jquery.flexslider-min.js"></script>-->
-
-<!--    <script type="text/javascript">
-        $(function () {
-            $(document).ready(function () {
-                $('.    ').flexslider({
-                    animation: "fade",
-                    slideshowSpeed: 4000,
-                    animationSpeed: 600,
-                    controlNav: false,
-                    directionNav: true,
-                    controlsContainer: ".flex-container" // the container that holds the flexslider
-                });
-            });
-        });
-    </script>-->
 
     <script src="scripts/angular-local-storage.js"></script>
     <script src="scripts/loading-bar.min.js"></script>
@@ -165,19 +149,19 @@
     <script type="text/javascript" src="app.js"></script>
 
     <script type="text/javascript" src="services/configService.js"></script>
-    <script type="text/javascript" src="services/authInterceptorService.js"></script>    
+    <script type="text/javascript" src="services/authInterceptorService.js"></script>
     <script type="text/javascript" src="services/authService.js"></script>
-    <script type="text/javascript" src="services/ordersService.js"></script>        
-    <script type="text/javascript" src="services/ProductService.js"></script>
-    <script type="text/javascript" src="services/CartService.js"></script>
+    <script type="text/javascript" src="services/ordersService.js"></script>
+    <script type="text/javascript" src="services/productService.js"></script>
+    <script type="text/javascript" src="services/cartService.js"></script>
     <script type="text/javascript" src="services/userService.js"></script>
 
     <script type="text/javascript" src="controllers/authController.js"></script>
     <script type="text/javascript" src="controllers/signupController.js"></script>
     <script type="text/javascript" src="controllers/ordersController.js"></script>
-    <script type="text/javascript" src="controllers/main.js"></script>
-    <script type="text/javascript" src="controllers/productDetails.js"></script>
-    <script type="text/javascript" src="controllers/cart.js"></script>
-    <script type="text/javascript" src="controllers/checkout.js"></script>
+    <script type="text/javascript" src="controllers/mainController.js"></script>
+    <script type="text/javascript" src="controllers/productDetailsController.js"></script>
+    <script type="text/javascript" src="controllers/cartController.js"></script>
+    <script type="text/javascript" src="controllers/checkoutController.js"></script>
 </body>
 </html>

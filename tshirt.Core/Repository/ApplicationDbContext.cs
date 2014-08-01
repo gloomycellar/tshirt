@@ -18,6 +18,8 @@ namespace tshirt.Core.Repository
 
         public DbSet<Product> Products { get; set; }
 
+        public DbSet<Order> Orders { get; set; }
+
         public void Seed()
         {
             AccountRepository acc = new AccountRepository(this);

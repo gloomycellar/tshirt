@@ -6,19 +6,19 @@ var app = angular
       $routeProvider
         .when('/', {
             templateUrl: 'views/main.html',
-            controller: 'main'
+            controller: 'mainController'
         })
         .when('/productdetails/:productId', {
             templateUrl: 'views/productdetails.html',
-            controller: 'productDetails'
+            controller: 'productDetailsController'
         })
         .when('/cart', {
             templateUrl: 'views/cart.html',
-            controller: 'cart'
+            controller: 'cartController'
         })
         .when('/checkout', {
             templateUrl: 'views/checkout.html',
-            controller: 'checkout'
+            controller: 'checkoutController'
         })
         .when('/register', {
             templateUrl: 'views/register.html',
@@ -28,25 +28,25 @@ var app = angular
             redirectTo: '/'
         });
 
-      $routeProvider.when("/home", {
-          controller: "homeController",
-          templateUrl: "views/home.html"
-      });
+      //$routeProvider.when("/home", {
+      //    controller: "homeController",
+      //    templateUrl: "views/home.html"
+      //});
 
-      $routeProvider.when("/login", {
-          controller: "loginController",
-          templateUrl: "views/login.html"
-      });
+      //$routeProvider.when("/login", {
+      //    controller: "loginController",
+      //    templateUrl: "views/login.html"
+      //});
 
-      $routeProvider.when("/signup", {
-          controller: "signupController",
-          templateUrl: "views/signup.html"
-      });
+      //$routeProvider.when("/signup", {
+      //    controller: "signupController",
+      //    templateUrl: "views/signup.html"
+      //});
 
-      $routeProvider.when("/orders", {
-          controller: "ordersController",
-          templateUrl: "views/orders.html"
-      });
+      //$routeProvider.when("/orders", {
+      //    controller: "ordersController",
+      //    templateUrl: "views/orders.html"
+      //});
 
       //$routeProvider.otherwise({ redirectTo: "/" });
   });
