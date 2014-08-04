@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using tshirt.Core.Entities.Account;
 using tshirt.Core.Extensions;
@@ -7,14 +8,14 @@ namespace tshirt.Core.Entities.Product
 {
     public class Order : EntityBase
     {
-        public Order(User user)
+        public Order(Guid userId)
         {
-            User = user;
+            UserId = userId;
             CartItems = new List<OrderItem>();
             PaymentType = PaymentType.CreditCard;
         }
 
-        public virtual User User { get; private set; }
+        public virtual Guid UserId { get; private set; }
 
         public virtual ICollection<OrderItem> CartItems { get; private set; }
 

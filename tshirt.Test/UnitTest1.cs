@@ -23,6 +23,7 @@ namespace tshirt.Test
             context.Seed();
         }
 
+        [Ignore]
         [TestMethod]
         public void TestMethod2()
         {
@@ -31,6 +32,7 @@ namespace tshirt.Test
             var a = repo.Entities.ToArray();
         }
 
+        [Ignore]
         [TestMethod]
         public void TestMethod3()
         {
@@ -71,6 +73,37 @@ namespace tshirt.Test
 
             Assert.IsNotNull(result.AddressDetails);
             //Assert.AreEqual(result.AddressDetails.Address, "Address 1");
+        }
+
+        [TestMethod]
+        public void CanSaveOrder()
+        {
+            ApplicationDbContext context = new ApplicationDbContext();
+
+            AccountRepository accountRepo = new AccountRepository(context);
+            IRepository<Order> orderRepo = new Repository<Order>(context);
+            IRepository<Product> productRepo = new Repository<Product>(context);
+
+            Product product = productRepo.Entities.Where(x => x.Id == 1).First();
+
+            User user = Task.Run(async () => await accountRepo.FindUserByName("tim@tim.com")).Result;
+
+            Order order = new Order(Guid.Parse(user.Id));
+
+            order.Add(product, 10);
+
+            Task t = Task.Run(async () => {
+
+                try
+                {
+                    await orderRepo.SaveOrUpdateAcync(order);
+                }
+                catch (Exception ex)
+                {
+                    Assert.Fail(ex.Message);
+                }
+            
+            });
         }
     }
 }

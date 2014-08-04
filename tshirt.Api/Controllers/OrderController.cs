@@ -8,58 +8,46 @@ using tshirt.Core.Entities.Product;
 using tshirt.Core.Repository;
 using tshirt.Core.Extensions;
 using tshirt.Api.Helper;
+using System.Linq;
+using System;
 
 namespace tshirt.Api.services
 {
     [Authorize]
     public class OrderController : ApiController
     {
-        private IRepository<Order> orderRepository;
+        private IRepository<Order> orderRepo;
+        private IRepository<Product> productRepo;
 
-        public OrderController(IRepository<Order> orderRepository)
+        //public OrderController(IRepository<Order> orderRepo, IRepository<Product> productRepo)
+        public OrderController()
         {
-            this.orderRepository = orderRepository;
+            //this.orderRepo = orderRepo;
+            //this.productRepo = productRepo;
+            ApplicationDbContext context2 = new ApplicationDbContext();
+            orderRepo = new Repository<Order>(context2);
+            productRepo = new Repository<Product>(context2);
         }
-
-        //[Authorize]
-        //public IHttpActionResult Get()
-        //{
-        //    return Ok(Order.CreateOrders());
-        //}
 
         [Authorize]
-        public IHttpActionResult Post(IEnumerable<CartItemData> items)
+        public async Task<IHttpActionResult> Post(IEnumerable<CartItemData> items)
         {
-            string userName = ClaimsPrincipal.Current.FindFirst("sub").Value;
+            try
+            {
+                IEnumerable<int> ids = items.Select(x => x.ProductId);
+                IEnumerable<Product> products = productRepo.Entities.Where(x => ids.Contains(x.Id));
 
-            //Order order = new Order(UserHelper.CurrentUser);
-            //items.ForEach(x => order.Add(x.Product, x.Quontity));
+                Order order = new Order(Guid.Parse(UserHelper.CurrentUser.Id));
 
-            //await orderRepository.SaveOrUpdateAcync(order);
+                items.ForEach(x => order.Add(products.Where(p => p.Id == x.ProductId).First(), x.Quontity));
+                await orderRepo.SaveOrUpdateAcync(order);
 
-            return Ok();
+                return Ok();
+            }
+            catch (Exception ex)
+            {
+                return InternalServerError();
+            }           
         }
     }
-
-    //public class Order
-    //{
-    //    public int OrderID { get; set; }
-    //    public string CustomerName { get; set; }
-    //    public string ShipperCity { get; set; }
-    //    public Boolean IsShipped { get; set; }
-
-    //    public static List<Order> CreateOrders()
-    //    {
-    //        List<Order> OrderList = new List<Order> 
-    //        {
-    //            new Order {OrderID = 10248, CustomerName = "Taiseer Joudeh", ShipperCity = "Amman", IsShipped = true },
-    //            new Order {OrderID = 10249, CustomerName = "Ahmad Hasan", ShipperCity = "Dubai", IsShipped = false},
-    //            new Order {OrderID = 10250,CustomerName = "Tamer Yaser", ShipperCity = "Jeddah", IsShipped = false },
-    //            new Order {OrderID = 10251,CustomerName = "Lina Majed", ShipperCity = "Abu Dhabi", IsShipped = false},
-    //            new Order {OrderID = 10252,CustomerName = "Yasmeen Rami", ShipperCity = "Kuwait", IsShipped = true}
-    //        };
-
-    //        return OrderList;
-    //    }
-    //}
 }

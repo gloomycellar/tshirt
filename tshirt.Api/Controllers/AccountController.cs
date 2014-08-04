@@ -55,7 +55,6 @@ namespace tshirt.Apiaccount.Controllers
             string userName = ClaimsPrincipal.Current.FindFirst("sub").Value;
             User user = await repo.FindUserByName(userName);
 
-            //return Mapper.Map<UserData>(user);
             return Ok();
         }
 

@@ -68,8 +68,10 @@ app.factory("cartService", function ($http, $q, configService) {
         },
 
         saveState: function () {
-
-            var array = [{ quontity: 10 }];
+            var array = [];
+            for (var index = 0; index < this.cartItems.length; index++) {
+                array.push({ productId: this.cartItems[index].product.id, quontity: this.cartItems[index].quontity });
+            }
 
             return $http.post(configService.serviceBase + '/order', array).then(function (response) {
                 return response;
