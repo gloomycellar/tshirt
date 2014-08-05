@@ -1,15 +1,13 @@
-﻿using System.Collections.Generic;
-using System.Security.Claims;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
 using System.Threading.Tasks;
 using System.Web.Http;
-using tshirt.Api.ViewModels.Cart;
-using tshirt.Core.Entities.Account;
-using tshirt.Core.Entities.Product;
-using tshirt.Core.Repository;
-using tshirt.Core.Extensions;
 using tshirt.Api.Helper;
-using System.Linq;
-using System;
+using tshirt.Api.ViewModels.Cart;
+using tshirt.Core.Entities.Product;
+using tshirt.Core.Extensions;
+using tshirt.Core.Repository;
 
 namespace tshirt.Api.services
 {

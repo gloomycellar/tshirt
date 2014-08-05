@@ -57,7 +57,7 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="admin\admin.js" />
+    <Content Include="admin\app.js" />
     <Content Include="admin\blank.html" />
     <Content Include="admin\buttons.html" />
     <Content Include="admin\controllers\admin.js" />
@@ -75,8 +75,8 @@
     <Content Include="admin\fonts\glyphicons-halflings-regular.svg" />
     <Content Include="admin\forms.html" />
     <Content Include="admin\grid.html" />
+    <Content Include="admin\_index.html" />
     <Content Include="admin\index.html" />
-    <Content Include="admin\index_.html" />
     <Content Include="admin\js\bootstrap.js" />
     <Content Include="admin\js\bootstrap.min.js" />
     <Content Include="admin\js\demo\dashboard-demo.js" />
@@ -149,13 +149,9 @@
     <Content Include="content\Site.css" />
     <Content Include="controllers\cartController.js" />
     <Content Include="controllers\checkoutController.js" />
-    <Content Include="controllers\homeController.js" />
-    <Content Include="controllers\indexController.js" />
     <Content Include="controllers\authController.js" />
     <Content Include="controllers\mainController.js" />
-    <Content Include="controllers\ordersController.js" />
     <Content Include="controllers\productDetailsController.js" />
-    <Content Include="controllers\signupController.js" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="index.html" />
     <Content Include="themeTemplate\products.html" />

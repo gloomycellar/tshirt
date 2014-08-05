@@ -11,47 +11,47 @@ namespace tshirt.Core.Entities.Product
         public Order(Guid userId)
         {
             UserId = userId;
-            CartItems = new List<OrderItem>();
+            OrderItems = new List<OrderItem>();
             PaymentType = PaymentType.CreditCard;
+            OrderId = Guid.NewGuid();
         }
 
         public virtual Guid UserId { get; private set; }
-
-        public virtual ICollection<OrderItem> CartItems { get; private set; }
-
+        public virtual ICollection<OrderItem> OrderItems { get; private set; }
         public PaymentType PaymentType { get; set; }
+        public Guid OrderId { get; private set; }
 
         public decimal TotalPrice
         {
             get
             {
                 decimal total = 0;
-                CartItems.ForEach(x => total += x.TotalPrice);
+                OrderItems.ForEach(x => total += x.TotalPrice);
                 return total;
             }
         }
 
         public void Add(Product product, int count = 1)
         {
-            if (CartItems.Any(x => x.Product == product))
+            if (OrderItems.Any(x => x.Product == product))
             {
-                CartItems.Where(x => x.Product == product).First().Add(count);
+                OrderItems.Where(x => x.Product == product).First().Add(count);
             }
             else
             {
-                CartItems.Add(new OrderItem(product, count));
+                OrderItems.Add(new OrderItem(product, count));
             }
         }
 
         public void Remove(Product product, int count = 1)
         {
-            if (CartItems.Any(x => x.Product == product))
+            if (OrderItems.Any(x => x.Product == product))
             {
-                OrderItem item = CartItems.Where(x => x.Product == product).First();
+                OrderItem item = OrderItems.Where(x => x.Product == product).First();
                 item.Remove(count);
                 if (0 == item.Quontity)
                 {
-                    CartItems.Remove(item);
+                    OrderItems.Remove(item);
                 }
             }
         }
