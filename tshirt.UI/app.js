@@ -27,28 +27,6 @@ var app = angular
         .otherwise({
             redirectTo: '/'
         });
-
-      //$routeProvider.when("/home", {
-      //    controller: "homeController",
-      //    templateUrl: "views/home.html"
-      //});
-
-      //$routeProvider.when("/login", {
-      //    controller: "loginController",
-      //    templateUrl: "views/login.html"
-      //});
-
-      //$routeProvider.when("/signup", {
-      //    controller: "signupController",
-      //    templateUrl: "views/signup.html"
-      //});
-
-      //$routeProvider.when("/orders", {
-      //    controller: "ordersController",
-      //    templateUrl: "views/orders.html"
-      //});
-
-      //$routeProvider.otherwise({ redirectTo: "/" });
   });
 
 app.config(function ($httpProvider) {

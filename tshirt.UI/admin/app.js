@@ -10,7 +10,19 @@ var app = angular.module("adminApp", ["ngRoute", 'LocalStorageModule']).config(f
         templateUrl: 'views/products.html',
         controller: 'productController'
     })
+    .when('/login', {
+        templateUrl: 'views/login.html',
+        controller: 'loginController'
+    })
     .otherwise({
         redirectTo: '/'
     });
 });
+
+app.config(function ($httpProvider) {
+    $httpProvider.interceptors.push('authInterceptorService');
+});
+
+app.run(['authService', function (authService) {
+    authService.fillAuthData();
+}]);

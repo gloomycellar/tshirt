@@ -58,9 +58,10 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="admin\app.js" />
-    <Content Include="admin\blank.html" />
-    <Content Include="admin\buttons.html" />
+    <Content Include="admin\themeTemplate\blank.html" />
+    <Content Include="admin\themeTemplate\buttons.html" />
     <Content Include="admin\controllers\adminCotroller.js" />
+    <Content Include="admin\controllers\loginCotroller.js" />
     <Content Include="admin\controllers\navigationController.js" />
     <Content Include="admin\controllers\productController.js" />
     <Content Include="admin\css\bootstrap.css" />
@@ -72,16 +73,17 @@
     <Content Include="admin\css\sb-admin.css" />
     <Content Include="admin\directives\datatable.js" />
     <Content Include="admin\directives\metismenu.js" />
-    <Content Include="admin\flot.html" />
+    <Content Include="admin\themeTemplate\flot.html" />
     <Content Include="admin\font-awesome\css\font-awesome.css" />
     <Content Include="admin\font-awesome\css\font-awesome.min.css" />
     <Content Include="admin\font-awesome\fonts\fontawesome-webfont.svg" />
     <Content Include="admin\fonts\glyphicons-halflings-regular.svg" />
-    <Content Include="admin\forms.html" />
-    <Content Include="admin\grid.html" />
+    <Content Include="admin\themeTemplate\forms.html" />
+    <Content Include="admin\themeTemplate\grid.html" />
+    <Content Include="admin\views\login.html" />
     <Content Include="admin\views\navigation.html" />
     <Content Include="admin\views\products.html" />
-    <Content Include="admin\_index.html" />
+    <Content Include="admin\themeTemplate\index.html" />
     <Content Include="admin\index.html" />
     <Content Include="admin\js\bootstrap.js" />
     <Content Include="admin\js\bootstrap.min.js" />
@@ -100,12 +102,12 @@
     <Content Include="admin\js\plugins\morris\morris.js" />
     <Content Include="admin\js\plugins\morris\raphael-2.1.0.min.js" />
     <Content Include="admin\js\sb-admin.js" />
-    <Content Include="admin\login.html" />
-    <Content Include="admin\morris.html" />
-    <Content Include="admin\notifications.html" />
-    <Content Include="admin\panels-wells.html" />
-    <Content Include="admin\tables.html" />
-    <Content Include="admin\typography.html" />
+    <Content Include="admin\themeTemplate\login.html" />
+    <Content Include="admin\themeTemplate\morris.html" />
+    <Content Include="admin\themeTemplate\notifications.html" />
+    <Content Include="admin\themeTemplate\panels-wells.html" />
+    <Content Include="admin\themeTemplate\tables.html" />
+    <Content Include="admin\themeTemplate\typography.html" />
     <Content Include="admin\views\admin.html" />
     <Content Include="services\configService.js" />
     <Content Include="services\userService.js" />
